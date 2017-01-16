@@ -1,0 +1,20 @@
+
+
+
+
+// Add Component to the:
+src/app/app.modules.ts
+
+	import { exampleComponent } from './layouts/_example';
+
+	exampleComponent
+
+
+// For the primary links use:
+src/app/app.routes.ts
+
+
+// Use for the desktop / mobile versions
+
+<block-desktop *ngIf="!isMobile"></block-desktop>
+<block-mobile *ngIf="isMobile"></block-mobile>

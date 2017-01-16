@@ -1,0 +1,10 @@
+<div class="block-tipp-question">
+  <div class="container" *ngIf="!showContainer">
+    <a (click)="toggleContainer()">
+      Warum ist das wichtig?
+    </a>
+  </div>
+  <div class ="bottomSheet" [ngClass]="{'expanded':showContainer  == true,'collapsed':showContainer==false}" >
+    <a (click)="toggleContainer()">hide</a>
+     </div>
+</div>

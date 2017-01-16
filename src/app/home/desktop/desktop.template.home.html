@@ -1,0 +1,523 @@
+<!--todo :: linker - this is a developer component with primary links-->
+<!--<linker></linker>-->
+
+<!-- Mold template -->
+
+<div id="Home" *ngIf="isMold" class="desktop-homepage home-desktop-mold">
+
+  <div class="block-top-banner">
+    <div class="container">
+
+      <div class="desktop-top-menu-home menu-line">
+        <div class="container">
+          <div (click)="goHome();" class="left" id="fromDesktopMenuHomeToHome">
+            <span class="site-name"><img src="../../assets/img/IH-logo.svg" width="163" height="48"/></span>
+          </div>
+          <ul class="right">
+            <li><a pageScroll  href="#block-solution" id="fromHomeDesktopMenuToSolutions">So geht’s</a></li>
+            <li><a pageScroll  href="#block-hero-for" id="fromHomeDesktopMenuToHero">Das ist der Immoheld</a></li>
+            <li><a  pageScroll href="#block-behind" id="fromHomeDesktopMenuToBehind">Wer steckt dahinter?</a></li>
+            <li><a pageScroll  href="#block-questions" id="fromHomeDesktopMenuToQuestions">Deine Fragen</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="banner">
+        <div class="left">
+          <div _ngcontent-mhn-9="" class="image-block">
+            <span class="hero">
+              <img src="../../assets/img/hero/Immoheld-schimmel.svg" width="450" height="450">
+            </span>
+          </div>
+        </div>
+        <div class="right">
+          <h1>
+            Schimmel-Schnell- <br> Check für dein Zuhause
+          </h1>
+          <h3>
+            „Selber machen oder Profi holen?” Finde mit 3 einfachen <br> Fragen heraus, wie du dein Schimmel-Problem lösen kannst.
+          </h3>
+          <a (click)="goNext();" id="fromBannerHomeToQuestions">
+            <button md-raised-button class="btn-default btn--homepage">
+              Jetzt starten
+            </button>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="block-solution" id="block-solution" name="block-solution">
+    <div class="container-middle">
+
+      <div class="top-liner">
+
+        <div class="numbers-3">
+          <div class="block-number block-number-orange">1</div>
+          <div class="numbers-title">
+            Einfach
+          </div>
+          <div class="numbers-content">
+            Beantworte drei kurze Fragen zu<br>
+            deinem Schimmel-Problem
+          </div>
+        </div>
+
+        <div class="numbers-3">
+          <div class="block-number block-number-orange">2</div>
+          <div class="numbers-title">
+            Vom Handwerkern geprüft
+          </div>
+          <div class="numbers-content">
+            Unser durch Experten geprüfte<br>
+            Fragebogen gibt dir eine<br>
+            Einschätzung, was du tun kannst.
+          </div>
+        </div>
+
+        <div class="numbers-3">
+          <div class="block-number block-number-orange">3</div>
+          <div class="numbers-title">
+            Schnelle Lösung
+          </div>
+          <div class="numbers-content">
+            Selber machen? Kein Problem!<br>
+            Wir helfen dir mit speziell für dich<br>
+            ausgewählten Videos.
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="container-middle">
+      <div class="flex">
+        <div class="flex flex--main flex--horizontal all-block">
+
+          <div class="line--left">
+            <div class="flex ">
+              <div class="flex flex--main flex--horizontal">
+                <div class="flex flex--border"></div>
+                <div class="content">
+                  <h2>
+                    Tipp: Spreche mit unseren<br>
+                    Telefonexperten
+                  </h2>
+                  <p>
+                    Unsicher, was zu tun ist? Spreche mit unseren Telefonexperten und lass dich persönlich beraten.Dieser Service ist kostenpflichtig.
+                  </p>
+                  <a (click)="goProductDetails();" id="fromHomeToProductDetails">
+                    <div class="btn-line">
+                      <div class="arrow-right arrow-right--dark-blue"></div>
+                      Jetzt mehr erfahren
+                    </div>
+                  </a>
+                </div>
+                <div class="flex flex--border"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="line--right">
+            <div class="flex">
+              <div class="flex flex--main flex--horizontal">
+                <div class="flex flex--border"></div>
+                <div class="content">
+                  <h2>
+                    Problem erkannt,<br>
+                    Lösung gefunden
+                  </h2>
+                  <p>
+                    Einfach, schnell und kostenlos: Starte den Schnellcheck und erhalte eine unverbindliche Einschätzung für dein Schimmel-Problem.
+                  </p>
+                  <a (click)="goNext();" id="fromSolutionsHomeToQuestions">
+                    <div class="btn-line">
+                      <div class="arrow-right arrow-right--dark-blue"></div>
+                      Jetzt Starten
+                    </div>
+                  </a>
+                </div>
+                <div class="flex flex--border"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block-hero-for" id="block-hero-for" name="block-hero-for">
+    <div class="container">
+      <header>
+        <h2>
+          Ein Held für dich
+        </h2>
+        <p>
+          Das Immoheld-Portal ist ein Berliner Startup, das dir bei Fragen und Problemen rund um deine Immobilie zur Seite steht. Um dir den besten Service zu bieten, arbeiten wir mit Fachexperten aus unterschiedlichen Gewerken zusammen.
+        </p>
+      </header>
+    </div>
+
+    <div class="block-services">
+      <div class="container-middle">
+        <div class="container">
+
+          <div class="line line-1">
+            <div class="line--left line--imager">
+              <img src="../../../assets/img/hero/Immoheld-list.svg" alt="" width="" height="265">
+            </div>
+            <div class="line--right line--texter">
+              <h3>
+                Geprüfte Problemanalyse
+              </h3>
+              <p>
+                Unser Fragebogen wurde zusammen mit Profis entwickelt. Er gibt dir eine erste, unverbindliche Einschätzung zu deinem Problem.
+              </p>
+            </div>
+          </div>
+
+          <div class="line line-2">
+            <div class="line--right line--imager">
+              <img src="../../../assets/img/hero/Immoheld-call.svg" alt="" width="" height="265">
+            </div>
+            <div class="line--left line--texter">
+              <h3>
+                Deine Problemlösung - sofort
+              </h3>
+              <p>
+                Mit wenigen Klicks zur Lösung: Selber machen oder Profi holen? Unsere von Experten ausgewählten Videos zeigen dir, wie du kleineren Schimmelbefall selber in den Griff kriegen kannst. Stellt sich heraus, dass du lieber einen Profi holen solltest? Kein Problem! Nutze dafür unsere kostenpflichtige Telefonberatung.
+              </p>
+            </div>
+          </div>
+
+          <div class="line line-3">
+            <div class="line--left line--imager">
+              <img src="../../../assets/img/hero/Immoheld-check.svg" alt="" width="" height="265">
+            </div>
+            <div class="line--right line--texter">
+              <h3>
+                Individuelle Hilfe
+              </h3>
+              <p>
+                Profitiere von sorgfältig erstellten und empfohlenen Inhalten rund um das Thema Schimmel.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block-test">
+      <div class="container-middle">
+        <div class="container">
+
+          <h3>
+            Beantworte drei kurze Fragen und löse dein Schimmelproblem
+          </h3>
+
+          <button md-raised-button class="btn-default btn--homepage" (click)="goNext();" id="fromTestHomeToQuestions">
+            Schimmelcheck jetzt starten
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-middle">
+      <block-note-desktop></block-note-desktop>
+    </div>
+
+    <div class="block-behind" id="block-behind" name="block-behind">
+      <div class="container">
+        <h2>
+          Wer steckt dahinter?
+        </h2>
+
+        <p>
+          Als junges Team bestehend aus Handwerkern und Digitalexperten (und einem, der mit Zahlen kann) haben wir uns 2016 zusammengetan, um mit Immoheld eine Plattform für professionellen Rat rund um die eigenen vier Wände entstehen zu lassen. Uns verbindet die Liebe zum Heimwerken und ein gemeinsames Ziel: aus der Bundeshauptstadt Berlin den Handwerkermarkt transparenter gestalten – zusammen mit euch!
+        </p>
+      </div>
+    </div>
+
+
+    <div class="block-questions" id="block-questions" name="block-questions">
+      <div class="container">
+        <h2>Deine Fragen</h2>
+        <div class="carousel-block">
+
+          <carousel-home></carousel-home>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <footer-desktop></footer-desktop>
+
+</div>
+
+
+<!--  Food Floor template -->
+
+<div id="Home" *ngIf="isFoodFloor" class="desktop-homepage home-desktop-food-floor">
+
+  <div class="block-top-banner">
+    <div class="container">
+
+      <div class="desktop-top-menu-home menu-line">
+        <div class="container">
+          <div (click)="goHome();" class="left" id="fromDesktopMenuHomeToHome">
+            <span class="site-name"><img src="../../assets/img/IH-logo.svg" width="163" height="48"/></span>
+          </div>
+          <ul class="right">
+            <li><a pageScroll  href="#block-solution" id="fromHomeDesktopMenuToSolutions">So geht’s</a></li>
+            <li><a pageScroll  href="#block-hero-for" id="fromHomeDesktopMenuToHero">Das ist der Immoheld</a></li>
+            <li><a  pageScroll href="#block-behind" id="fromHomeDesktopMenuToBehind">Wer steckt dahinter?</a></li>
+            <li><a pageScroll  href="#block-questions" id="fromHomeDesktopMenuToQuestions">Deine Fragen</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="banner">
+        <div class="left">
+          <div _ngcontent-mhn-9="" class="image-block">
+            <span class="hero">
+              <img src="../../assets/img/hero/Immoheld-diy-laminat.svg" width="450" height="450">
+            </span>
+          </div>
+        </div>
+        <div class="right">
+          <h1>
+            Kostenrechner<br>Laminat
+          </h1>
+          <h3>
+            Sofortige Preisindikation für dein Projekt - finde mit 3 einfachen<br>
+            Fragen heraus, wie viel dein neuer Laminatboden kostet.
+          </h3>
+          <a (click)="goNext();" id="fromBannerHomeToQuestions">
+            <button md-raised-button class="btn-default btn--homepage">
+              Jetzt starten
+            </button>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="block-solution" id="block-solution" name="block-solution">
+    <div class="container-middle">
+
+      <div class="top-liner">
+
+        <div class="numbers-3">
+          <div class="block-number block-number-orange">1</div>
+          <div class="numbers-title">
+            Einfach
+          </div>
+          <div class="numbers-content">
+            Beantworte drei Fragen für eine<br>
+            individuelle Preisindikation
+          </div>
+        </div>
+
+        <div class="numbers-3">
+          <div class="block-number block-number-orange">2</div>
+          <div class="numbers-title">
+            Präzise
+          </div>
+          <div class="numbers-content">
+            Erhalte eine realistische Schätzung,<br>
+            beruhend auf marktüblichen Preisen
+          </div>
+        </div>
+
+        <div class="numbers-3">
+          <div class="block-number block-number-orange">3</div>
+          <div class="numbers-title">
+            Professionelle Hilfe
+          </div>
+          <div class="numbers-content">
+            Gelange mit unserem Expertenrat<br>
+            immer zum besten Ergebnis
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="container-middle">
+      <div class="flex">
+        <div class="flex flex--main flex--horizontal all-block">
+
+          <div class="line--left">
+            <div class="flex ">
+              <div class="flex flex--main flex--horizontal">
+                <div class="flex flex--border"></div>
+                <div class="content">
+                  <h2>
+                    Tipp: Laminat verlegen mit individuellen<br>
+                    Tipps & Tricks von unseren Meistern
+                  </h2>
+                  <p>
+                    Sprich mit unseren erfahrenen Laminat-Profis und hole dir Expertenrat für den perfekten Bodenbelag
+                  </p>
+                  <a (click)="goProductDetails();" id="fromHomeToProductDetails">
+                    <div class="btn-line">
+                      <div class="arrow-right arrow-right--dark-blue"></div>
+                      Jetzt starten
+                    </div>
+                  </a>
+                </div>
+                <div class="flex flex--border"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="line--right">
+            <div class="flex">
+              <div class="flex flex--main flex--horizontal">
+                <div class="flex flex--border"></div>
+                <div class="content">
+                  <h2>
+                    Preisindikationen erhalten,<br>
+                    Ärmel hochgekrempelt!
+                  </h2>
+                  <p>
+                    Der Immoheld hält ausschließlich Anleitungen für dich bereit, welche sorgfältig von unseren Laminat Experten für dich ausgewählt wurden.
+                  </p>
+                  <a (click)="goNext();" id="fromSolutionsHomeToQuestions">
+                    <div class="btn-line">
+                      <div class="arrow-right arrow-right--dark-blue"></div>
+                      Zu den Inhalten
+                    </div>
+                  </a>
+                </div>
+                <div class="flex flex--border"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block-hero-for" id="block-hero-for" name="block-hero-for">
+    <div class="container">
+      <header>
+        <h2>
+          Ein Held für dich
+        </h2>
+        <p>
+          Das Immoheld-Portal ist ein Berliner Startup, das dir bei Fragen und Problemen rund um deine Immobilie zur Seite steht. Um dir den besten Service zu bieten, arbeiten wir mit Fachexperten aus unterschiedlichen Gewerken zusammen
+        </p>
+      </header>
+    </div>
+
+    <div class="block-services">
+      <div class="container-middle">
+        <div class="container">
+
+          <div class="line line-1">
+            <div class="line--left line--imager">
+              <img src="../../../assets/img/hero/Immoheld-list.svg" alt="" width="" height="265">
+            </div>
+            <div class="line--right line--texter">
+              <h3>
+                Realistische Kostenschätzung
+              </h3>
+              <p>
+                Unser Fragebogen wurde zusammen mit Profis entwickelt. Er gibt dir eine erste, unverbindliche Preisindikation zu möglich anfallenden Materialkosten für deinen neuen Boden
+              </p>
+            </div>
+          </div>
+
+          <div class="line line-2">
+            <div class="line--right line--imager">
+              <img src="../../../assets/img/hero/Immoheld-call.svg" alt="" width="" height="265">
+            </div>
+            <div class="line--left line--texter">
+              <h3>
+                Expertenrat - zu jeder Zeit!
+              </h3>
+              <p>
+                Mit nur wenigen Klicks zur Lösung: Profi-Videos oder individuelle Expertenberatung? Unsere von Meistern ausgewählten Videos zeigen dir, wie du deinen neuen Boden kinderleicht verlegen kannst. Solltest du zusätzliche Rückfragen haben, stehen dir unsere Handwerksmeister jederzeit für individuelle Rückfragen zur Verfügung.
+              </p>
+            </div>
+          </div>
+
+          <div class="line line-3">
+            <div class="line--left line--imager">
+              <img src="../../../assets/img/hero/Immoheld-check.svg" alt="" width="" height="265">
+            </div>
+            <div class="line--right line--texter">
+              <h3>
+                Und vieles mehr
+              </h3>
+              <p>
+                Profitiere von weiteren Experten Tipps & Tricks aus der Immoheld-Welt. Neben Laminat verlegen entstehen aktuell viele weitere Themen rund um deine Immobilie. Ein regelmäßiger Blick auf dein neues Immobilien-Portal lohnt sich.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block-test">
+      <div class="container-middle">
+        <div class="container">
+
+          <h3>
+            Bekomme sofort eine Kostenschätzung für deinen neuen Laminatboden
+          </h3>
+
+          <button md-raised-button class="btn-default btn--homepage" (click)="goNext();" id="fromTestHomeToQuestions">
+            Jetzt starten
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-middle">
+      <block-note-desktop></block-note-desktop>
+    </div>
+
+    <div class="block-behind" id="block-behind" name="block-behind">
+      <div class="container">
+        <h2>
+          Wer steckt dahinter?
+        </h2>
+
+        <p>
+          Als junges Team bestehend aus Handwerkern und Digitalexperten (und einem, der mit Zahlen kann) haben wir uns 2016 zusammengetan, um mit Immoheld eine Plattform für professionellen Rat rund um die eigenen vier Wände entstehen zu lassen. Uns verbindet die Liebe zum Heimwerken und ein gemeinsames Ziel: aus der Bundeshauptstadt Berlin den Handwerkermarkt transparenter gestalten – zusammen mit euch!
+        </p>
+      </div>
+    </div>
+
+
+    <div class="block-questions" id="block-questions" name="block-questions">
+      <div class="container">
+        <h2>Deine Fragen</h2>
+        <div class="carousel-block">
+
+          <carousel-home-food-floor></carousel-home-food-floor>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <footer-desktop></footer-desktop>
+
+</div>

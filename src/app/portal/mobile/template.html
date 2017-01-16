@@ -1,0 +1,115 @@
+
+<md-sidenav-layout class="mobile-sidenav-layout">
+
+  <md-sidenav #start mode="over" mode="push" align="end" class="side-menu--opened">
+
+
+    <button  md-icon-button class="side-nav-back-btn" on-tap="goBack($event)">
+      <md-icon svgSrc="/assets/icon/IH-nav-arrow-back.svg"></md-icon>
+    </button>
+
+    <button md-icon-button (click)="start.close()" class="side-nav-close-button">
+            <md-icon svgSrc="/assets/icon/IH-nav-close.svg"></md-icon>
+    </button>
+
+    <div class="big-block">
+      <mobile-sidenav-top-block></mobile-sidenav-top-block>
+      <mobile-sidenav-menu></mobile-sidenav-menu>
+    </div>
+    <mobile-sidenav-copyright></mobile-sidenav-copyright>
+
+
+  </md-sidenav>
+
+  <div id="Portal" class="portal-page portal-page--mobile">
+
+    <div class="mobile-rows3">
+
+      <div class="mobile-hedaer">
+
+        <md-toolbar color="primary">
+          <div>
+            <a (click)="goBack()" id="fromRecomendationsGoBack">
+              <button  md-icon-button class="side-nav-back-btn">
+                <md-icon svgSrc="/assets/icon/IH-nav-arrow-back.svg"></md-icon>
+              </button>
+            </a>
+          </div>
+          <span (click)="goHome()" id="fromRecomendationsToHome" class="site-name"><img src="../../assets/img/IH-logo.svg" width="88" height="26" /></span>
+          <div>
+            <button md-icon-button (click)="start.toggle()" class="side-nav-open-btn">
+                    <md-icon svgSrc="/assets/icon/IH-nav-hamburger.svg"></md-icon>
+            </button>
+          </div>
+        </md-toolbar>
+
+      </div>
+
+      <div class="mobile-content">
+
+        <div class="mobile-content-cell">
+
+
+
+
+
+          <!--#portal-section-1 shimmel-->
+          <div class="portal-section" id="portal-section-1" [ngClass]="{'expanded':showContainer1  == true,'collapsed':showContainer1==false}">
+              <h2 class="portal-section-title" (click)="toggleContainer1()">
+                Schimmel entfernen
+              </h2>
+             <div class="portal-section-content" [ngClass]="{'expanded':showContainer1  == true,'collapsed':showContainer1==false}">
+              <div class="block-videos">
+                  <video-portal-shimmel></video-portal-shimmel>
+              </div>
+              <div class="block-articles">
+                <articles-portal-shimmel></articles-portal-shimmel>
+              </div>
+              <tipp-portal-mobile-shimmel></tipp-portal-mobile-shimmel>
+            </div>
+          </div>
+
+          <!--#portal-section-2 floor-->
+          <div class="portal-section" id="portal-section-2" [ngClass]="{'expanded':showContainer2  == true,'collapsed':showContainer2==false}">
+            <h2 class="portal-section-title" (click)="toggleContainer2()">
+              Bodenbeläge
+            </h2>
+            <div class="portal-section-content" [ngClass]="{'expanded':showContainer2  == true,'collapsed':showContainer2==false}">
+              <div class="block-videos">
+                <video-portal-floor></video-portal-floor>
+              </div>
+              <div class="block-articles">
+                <articles-portal-floor></articles-portal-floor>
+              </div>
+              <tipp-portal-mobile-floor></tipp-portal-mobile-floor>
+            </div>
+          </div>
+
+          <!--#portal-section-3 pest-->
+          <div class="portal-section" id="portal-section-3" [ngClass]="{'expanded':showContainer3  == true,'collapsed':showContainer3==false}">
+            <h2 class="portal-section-title" (click)="toggleContainer3()">
+              Mäuse loswerden
+            </h2>
+            <div class="portal-section-content" [ngClass]="{'expanded':showContainer3  == true,'collapsed':showContainer3==false}">
+              <div class="block-videos">
+                <video-portal-pest></video-portal-pest>
+              </div>
+              <div class="block-articles">
+                <articles-portal-pest></articles-portal-pest>
+              </div>
+              <tipp-portal-mobile-pest></tipp-portal-mobile-pest>
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+      </div>
+      <mobile-sidenav-footer></mobile-sidenav-footer>
+    </div>
+  </div>
+</md-sidenav-layout>
+

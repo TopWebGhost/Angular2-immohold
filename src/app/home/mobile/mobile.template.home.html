@@ -1,0 +1,108 @@
+
+<md-sidenav-layout class="mobile-sidenav-layout">
+
+  <md-sidenav #start mode="over" mode="push" align="end" class="side-menu--opened">
+    <button md-icon-button (click)="start.close()" class="side-nav-close-button">
+            <md-icon svgSrc="/assets/icon/IH-nav-close.svg"></md-icon>
+    </button>
+
+
+    <div class="big-block">
+      <mobile-sidenav-top-block></mobile-sidenav-top-block>
+      <mobile-sidenav-menu></mobile-sidenav-menu>
+    </div>
+    <mobile-sidenav-copyright></mobile-sidenav-copyright>
+
+
+  </md-sidenav>
+
+
+  <div id="HomeMobile" class="mobile-homepage full-height">
+
+    <div class="mobile-rows3">
+
+      <div class="mobile-hedaer">
+        <md-toolbar color="primary">
+          <div>
+            <button (click)="goBack();" id="fromHomeGoBack" md-icon-button class="side-nav-back-btn">
+              <md-icon svgSrc="/assets/icon/IH-nav-arrow-back.svg"></md-icon>
+            </button>
+          </div>
+          <span (click)="goHome();" id="fromHomeToHome" class="site-name"><img src="../../assets/img/IH-logo.svg" width="88" height="26" /></span>
+          <div>
+            <button md-icon-button (click)="start.toggle()" class="side-nav-open-btn">
+                    <md-icon svgSrc="/assets/icon/IH-nav-hamburger.svg"></md-icon>
+            </button>
+          </div>
+        </md-toolbar>
+      </div>
+
+
+      <div class="mobile-content content-with-bg ">
+
+        <div class="mobile-content-start-page mobile-content-cell">
+
+          <!-- Mold template -->
+
+          <div class="home-mobile-mold">
+
+            <div class="image-block">
+              <div class="hero">
+                <img src="../../assets/img/hero/Immoheld-schimmel.svg" width="194" height="194" />
+              </div>
+            </div>
+
+            <h1>Schimmel-<br />Schnell-Check</h1>
+
+            <a (click) = "goNext()" id="fromHomeToQuestions">
+              <button md-raised-button class="btn-default start-btn">
+                Jetzt starten
+              </button>
+            </a>
+
+            <p class="description">
+              <b>„Selber machen oder Profi holen?”</b><br />Finde mit 3 einfachen Fragen<br />heraus, wie du dein Schimmel-<br />Problem lösen kannst.
+            </p>
+
+          </div>
+
+          <!-- Food Floor template template -->
+
+          <!--div class="home-mobile-food-floor">
+
+            <div class="image-block">
+              <div class="hero">
+                <img src="../../assets/img/hero/Immoheld-diy-laminat.svg" width="194" height="194" />
+              </div>
+            </div>
+
+            <h1>Kostenrechner<br>Laminat</h1>
+
+            <a (click) = "goNext()" id="fromHomeToQuestions">
+              <button md-raised-button class="btn-default start-btn">
+                Jetzt starten
+              </button>
+            </a>
+
+            <p class="description">
+              Sofortige Preisindikation für dein<br>
+              Projekt – finde mit 3 einfachen<br>
+              Fragen heraus, wie viel dein neuer<br>
+              Laminatboden kostet.
+            </p>
+
+          </div-->
+
+          <!-- Pest template -->
+
+        </div>
+
+      </div>
+
+      <mobile-sidenav-footer></mobile-sidenav-footer>
+    </div>
+  </div>
+</md-sidenav-layout>
+
+
+<!-- Food Floor template -->

@@ -1,0 +1,23 @@
+<div class="block-video-best">
+    <div class="video-container youtube-video">
+      <div class="iframe-container">
+
+      </div>
+      <div [ngClass]="['tag-line', 'tag-line--opacity', isPlaying ? 'hidden-bar' : 'visivle-bar']">
+        <div class="tag tag--reviews-count">{{likes}}</div>
+        <div class="tag tag--time">{{duration}}</div>
+      </div>
+    </div>
+    <div *ngIf="showRateButtons" class="rate-video">
+      <div>
+        <button md-icon-button class="btn-happy" (click)="like()">
+          <md-icon svgSrc="/assets/icon/IH-smiley-happy.svg" width="24" height="24"></md-icon>
+        </button>
+      </div>
+      <div>
+        <button md-icon-button class="btn-sad" (click)="dislike()">
+          <md-icon svgSrc="/assets/icon/IH-smiley-sad.svg" width="24" height="24"></md-icon>
+        </button>
+      </div>
+    </div>
+</div>

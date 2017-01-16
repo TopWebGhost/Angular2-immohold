@@ -1,0 +1,21 @@
+  <md-sidenav #start mode="over" mode="push" align="end">
+    <button md-icon-button (click)="start.close()" class="side-nav-close-button">
+            <md-icon svgSrc="/assets/icon/IH-nav-close.svg"></md-icon>
+    </button>
+
+    <a [routerLink]="['/login']" class="btn btn-primary">Log in</a>
+    <br>
+  </md-sidenav>
+
+  <md-toolbar color="primary">
+    <button md-icon-button (click)="start.toggle()" class="side-nav-open-button">
+            <md-icon svgSrc="/assets/icon/IH-nav-hamburger.svg"></md-icon>
+    </button>
+    <span>Spellbook</span>
+    <span class="demo-fill-remaining"></span>
+  </md-toolbar>
+
+
+
+
+

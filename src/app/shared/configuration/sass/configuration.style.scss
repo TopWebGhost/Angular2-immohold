@@ -1,0 +1,88 @@
+@import "../../../variables.scss";
+
+.configuration {
+  
+}
+
+.configuration.test-configuration {
+
+  padding-top: 22px;
+  padding-bottom: 18px;
+  background-color: #f1f1f1;
+  margin-bottom: 50px;
+
+  @media (min-width: $screen-md) {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    background-color: #fff;
+    margin-bottom: 57px;
+  }
+
+  .inner-block {
+    padding-left: 23px;
+    @media (min-width: $screen-md) {
+      padding-left: 0;
+    }
+  }
+  .title {
+    color: $color-blue-dark;
+    font-size: $fs-20;
+    line-height: $fs-24;
+    margin-bottom: 17px;
+
+    @media (min-width: $screen-md) {
+      font-size: $fs-20;
+      line-height: $fs-28;
+      margin-bottom: 17px;
+    }
+  }
+  .under-title {
+    color: $color-article;
+    font-size: $fs-16;
+    line-height: $fs-22;
+    margin-bottom: 30px;
+
+    @media (min-width: $screen-md) {
+      font-size: $fs-16;
+      line-height: $fs-22;
+      margin-bottom: 30px;
+    }
+  }
+  .bottom-text {
+    color: $color-article;
+    font-size: $fs-16;
+    line-height: $fs-22;
+    margin-top: 30px;
+
+    @media (min-width: $screen-md) {
+      font-size: $fs-16;
+      line-height: $fs-22;
+      margin-top: 30px;
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      list-style: none;
+      border-bottom: 2px solid #ECECEC;
+      color: $color-article;
+      font-size: $fs-16;
+      line-height: $fs-22;
+      padding-bottom: 7px;
+      padding-top: 7px;
+
+      @media (min-width: $screen-md) {
+        font-size: $fs-16;
+        line-height: $fs-22;
+        padding-bottom: 7px;
+        padding-top: 7px;
+      }
+    }
+    li:last-of-type {
+      border: none;
+    }
+  }
+}

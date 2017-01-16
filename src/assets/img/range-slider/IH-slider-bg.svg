@@ -1,0 +1,13 @@
+<svg width="280px" height="53px" viewBox="17 290 280 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M17,328.481533 C17,324.060769 20.5657062,320.088749 24.9473874,319.611613 L289.052613,290.852285 C293.441833,290.374328 297,293.560215 297,297.982916 L297,332.807759 C297,337.223855 293.408735,340.803808 288.996803,340.803808 L25.0031966,340.803808 C20.5831532,340.803808 17,337.216579 17,332.799306 L17,328.481533 Z" id="path-1"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Rectangle" stroke="none" fill="none">
+        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+        <use fill="#DEDEDE" fill-rule="evenodd" xlink:href="#path-1"></use>
+    </g>
+</svg>

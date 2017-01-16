@@ -1,0 +1,74 @@
+<div id="Photo" class="component-photo desktop-photo full-height">
+
+  <div class="desktop-rows3">
+
+    <div class="desktop-header">
+
+      <div class="desktop-header-cell">
+
+        <top-menu-desktop></top-menu-desktop>
+
+        <nav-desktop></nav-desktop>
+
+      </div>
+
+    </div>
+
+    <div class="desktop-content">
+
+      <div class="desktop-content-cell">
+
+
+          <div class="container flex flex--main full-height">
+
+            <div class="flex">
+
+              <div>
+                <h1 class="page-title">
+                  Foto hochgeladen
+                  <span class="uploaded-photo-name">{{image.title}}</span>
+                </h1>
+              </div>
+
+            </div>
+
+            <div class="flex flex--small">
+
+
+
+              <div class="uploaded-photo-container">
+
+                <img class="uploaded-photo" src={{image.src}}>
+
+                <div><a class="remove-image" (click)="continueWithoutPhoto()" id="fromUploadPhototoContinueWithoutPhoto">Foto löschen</a></div>
+
+              </div>
+
+            </div>
+
+            <div class="flex">
+
+              <div>
+                <a (click)="goNext()" id="fromUploadPhotoGoNext">
+                <button md-fab class="big-btn right-btn next-page-btn">
+                  <md-icon svgSrc="../../assets/icon/IH-nav-arrow-down-button.svg"></md-icon>
+                </button>
+                  </a>
+              </div>
+
+            </div>
+
+
+          </div>
+
+      </div>
+
+    </div>
+
+    <div class="desktop-footer">
+      <footer-desktop></footer-desktop>
+    </div>
+
+  </div>
+
+</div>

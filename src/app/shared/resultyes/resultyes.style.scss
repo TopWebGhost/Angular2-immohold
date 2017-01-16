@@ -1,0 +1,71 @@
+@import "../../variables.scss";
+
+.success-content-block {
+  text-align: center;
+
+  .image-block {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;    
+
+    .icon {
+      padding-top: 0px;
+      padding-left: 8px;
+
+      @media (min-width: $screen-md) {
+        padding-top: 22px;
+      }
+
+      img {
+        height: 50px;
+        width: 51px;
+
+        @media (min-width: $screen-md) {
+          height: 105px;
+          width: 107px;
+        }
+      }
+    }
+    .hero {
+
+      img {
+        height: 160px;
+        width: 160px;
+        margin-right: -55px;
+        margin-top: -20px;
+        @media (min-width: $screen-md) {
+          height: 300px;
+          width: 300px;
+          margin-right: -106px;
+        }
+      }
+    }
+
+  }
+
+  h1 {
+    margin: 10px 0;
+    @media (min-width: $screen-md) {
+      margin: 10px 0 15px 0;
+      font-size: $fs-h1-superlarge-dt;
+    }
+  }
+
+  .description {
+    font-size: $fs-lg;
+    @media (min-width: $screen-md) {
+      font-size: $fs-super-lg-dt;
+    }
+  }
+
+  .right-btn-container {
+    position: relative;
+    margin: 25px 0;
+
+    @media (min-width: $screen-md) {
+      margin: 14px 0 29px 0;
+    }
+  }
+
+}

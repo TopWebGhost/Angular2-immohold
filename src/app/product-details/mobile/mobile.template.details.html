@@ -1,0 +1,170 @@
+<md-sidenav-layout class="mobile-sidenav-layout">
+
+  <md-sidenav #start mode="over" mode="push" align="end" class="side-menu--opened">
+
+
+    <!--div class="container"-->
+
+    <button  md-icon-button class="side-nav-back-btn" on-tap="goBack($event)">
+      <md-icon svgSrc="/assets/icon/IH-nav-arrow-back.svg"></md-icon>
+    </button>
+
+    <button md-icon-button (click)="start.close()" class="side-nav-close-button">
+            <md-icon svgSrc="/assets/icon/IH-nav-close.svg"></md-icon>
+    </button>
+
+    <div class="big-block">
+      <md-card class="card-main">
+
+        <img src="../../assets/img/IH-hero-placeholder.svg">
+
+        <h3>
+          Weitere Tipps rund um Haus,<br>Wohnung und DIY-Projekte
+        </h3>
+
+        <md-card class="card-btn">
+
+          <button (click)="goPortal()" md-raised-button class="button btn-light" id="fromDetailsToPortal">
+            Portal besuchen
+          </button>
+
+        </md-card>
+      </md-card>
+
+
+      <ul>
+        <li>
+          <a (click)="goAbout()" class="btn btn-primary" id="fromDetailsSidenavToAbout">
+            Über uns
+          </a>
+        </li>
+        <li>
+          <a (click)="goContact()" class="btn btn-primary" id="fromDetailsSidenavToContacts">
+            Kontakt & Impressum
+          </a>
+        </li>
+        <li>
+          <a (click)="goDisclaimer()" class="btn btn-primary" id="fromDetailsSidenavToDisclaimer">
+            Haftungsausschluss
+          </a>
+        </li>
+        <li>
+          <a (click)="goTerms()" class="btn btn-primary" id="fromDetailsSidenavToTerms">
+            Datenschutz
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="copyright">
+      © 2016 – Immoheld
+    </div>
+
+    <!--/div-->
+  </md-sidenav>
+
+
+
+
+  <div id="Details" class="component-details mobile-details full-height">
+
+    <div class="mobile-rows3">
+
+      <div class="mobile-hedaer">
+
+        <md-toolbar color="primary">
+          <div>
+            <a (click)="goBack();" id="fromDetailsGoBack">
+              <button  md-icon-button class="side-nav-back-btn">
+                <md-icon svgSrc="/assets/icon/IH-nav-arrow-back.svg"></md-icon>
+              </button>
+            </a>
+          </div>
+          <span (click)="goHome()" id="fromDetailsToHome" class="site-name"><img src="../../assets/img/IH-logo.svg" width="88" height="26" /></span>
+          <div>
+            <button md-icon-button (click)="start.toggle()" class="side-nav-open-btn">
+                    <md-icon svgSrc="/assets/icon/IH-nav-hamburger.svg"></md-icon>
+            </button>
+          </div>
+        </md-toolbar>
+
+      </div>
+
+      <div class="mobile-content">
+
+        <div class="mobile-content-cell">
+
+          <div class="container flex flex--main full-height">
+
+            <div class="flex">
+
+              <div>
+                <h1 class="page-title">
+                  <b>
+                    Individuelle Telefonberatung
+                  </b><br>
+                  durch staatlich vereidigten <br>
+                  Schimmelexperten – <b>nur 12,95 €</b>
+                </h1>
+              </div>
+
+            </div>
+
+            <div class="flex">
+
+              <div class="details-manual">
+                <div class="details-item">
+                  <div>
+                    <div class="details-item-icon"><img src="../../assets/icon/IH-camera-icon.svg" width="30" height="23"></div>
+                  </div>
+                  <div class="details-item-description">Lade Fotos von deinem<br>Schimmelbefall hoch</div>
+                </div>
+                <div>
+                  <div class="details-separator-container"><div class="details-separator"></div></div>
+                  <div></div>
+                </div>
+                <div class="details-item">
+                  <div>
+                    <div class="details-item-icon"><img src="../../assets/icon/IH-phone-icon.svg" width="34" height="30"></div>
+                  </div>
+                  <div class="details-item-description">Gib einen Wunschtermin für<br>dein Expertentelefonat an</div>
+                </div>
+                <div>
+                  <div class="details-separator-container"><div class="details-separator"></div></div>
+                  <div></div>
+                </div>
+                <div class="details-item">
+                  <div>
+                    <div class="details-item-icon"><img src="../../assets/icon/IH-clock-icon.svg" width="30" height="29"></div>
+                  </div>
+                  <div class="details-item-description">Du wirst innerhalb von 48h<br>zurückgerufen.</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="flex">
+              <div class="button-container">
+                <a [routerLink]="['/upload-photo']" id="fromDetailsToUploadPhoto">
+                  <button md-raised-button class="btn-default">
+                    Jetzt starten
+                  </button>
+                </a>
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="mobile-footer">
+      </div>
+
+    </div>
+  </div>
+
+</md-sidenav-layout>

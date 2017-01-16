@@ -1,0 +1,162 @@
+<md-sidenav-layout class="mobile-sidenav-layout">
+
+
+  <md-sidenav #start mode="over" mode="push" align="end" class="side-menu--opened">
+
+
+    <button  md-icon-button class="side-nav-back-btn" on-tap="goBack($event)">
+      <md-icon svgSrc="/assets/icon/IH-nav-arrow-back.svg"></md-icon>
+    </button>
+
+    <button md-icon-button (click)="start.close()" class="side-nav-close-button">
+            <md-icon svgSrc="/assets/icon/IH-nav-close.svg"></md-icon>
+    </button>
+
+    <div class="big-block">
+      <mobile-sidenav-top-block></mobile-sidenav-top-block>
+      <mobile-sidenav-menu></mobile-sidenav-menu>
+    </div>
+    <mobile-sidenav-copyright></mobile-sidenav-copyright>
+
+  </md-sidenav>
+
+
+
+  <div id="Callback" class="component-callback mobile-callback full-height">
+
+    <div class="mobile-rows3">
+
+      <div class="mobile-hedaer">
+
+        <md-toolbar color="primary">
+          <div>
+            <a (click)="goBack();" id="callbackGoBack">
+              <button  md-icon-button class="side-nav-back-btn">
+                <md-icon svgSrc="/assets/icon/IH-nav-arrow-back.svg"></md-icon>
+              </button>
+            </a>
+          </div>
+          <span (click)="goHome();" id="callbackToHome" class="site-name"><img src="../../assets/img/IH-logo.svg" width="88" height="26" /></span>
+          <div>
+            <button md-icon-button (click)="start.toggle()" class="side-nav-open-btn">
+                    <md-icon svgSrc="/assets/icon/IH-nav-hamburger.svg"></md-icon>
+            </button>
+          </div>
+        </md-toolbar>
+
+      </div>
+
+
+      <top-notice-with-icon></top-notice-with-icon>
+
+      <!--div class="top-notice">
+        <div>
+          <b>Beratung vom Experten</b> – du zahlst 12,95 € nur, wenn du zufrieden bist.
+        </div>
+      </div-->
+
+      <div class="mobile-content">
+
+        <div class="mobile-content-cell">
+
+          <div class="container flex flex--main full-height">
+
+            <div class="flex">
+
+              <h1 class="page-title">Termin für Expertenberatung vereinbaren</h1>
+
+            </div>
+
+            <form class="flex flex--big" [formGroup]="complexForm" (ngSubmit)="submitForm(complexForm.value)" enctype="multipart/form-data">
+              <div>
+
+                <div class="form-group preferred-time-block" [ngClass]="{'has-error':!complexForm.controls['preferred_time'].valid && complexForm.controls['preferred_time'].touched}">
+                  <!--<input  class="form-control" type="hidden"  [formControl]="complexForm.controls['time']">-->
+                  <ng-select
+                          formControlName="preferred_time"
+                          [options]="timeOptions"
+                          [placeholder]="Erreichbarkeit"
+                          (selected)="onSelected($event)"
+                          theme="default">
+                  </ng-select>
+
+                  <div *ngIf="complexForm.controls['preferred_time'].hasError('required') && complexForm.controls['preferred_time'].touched" class="alert alert-danger">Prefered time is required.</div>
+                </div>
+
+                <div class="form-group" [ngClass]="{'has-error':!complexForm.controls['email'].valid && complexForm.controls['email'].touched}">
+                  <!--<input class="form-control" type="text" placeholder="Meine Email-Adresse" [formControl]="complexForm.controls['email']">-->
+                  <md-input class="form-control text-input" placeholder="Meine Email-Adresse" align="center" [formControl]="complexForm.controls['email']"
+                            pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+                  </md-input>
+
+                  <div *ngIf="complexForm.controls['email'].hasError('required') && complexForm.controls['email'].touched" class="alert alert-danger">
+                    Bitte korrigiere deine Email-Adresse
+                  </div>
+                  <div *ngIf="complexForm.controls['email'].hasError('pattern') && complexForm.controls['email'].touched" class="alert alert-danger">
+                    Falsche  Email-Adresse Format
+                  </div>
+
+                </div>
+
+
+                <div class="form-group" [ngClass]="{'has-error':!complexForm.controls['phone'].valid && complexForm.controls['phone'].touched}">
+                     <!--<input class="form-control" type="text" placeholder="John" [formControl]="complexForm.controls['phone']">-->
+                     <md-input class="form-control text-input" placeholder="Meine Telefonnummer" align="center" [formControl]="complexForm.controls['phone']"
+                               pattern="^(?:([+][0-9]{1,2})+[ .-]*)?([(]{1}[0-9]{1,6}[)])?([0-9 .-/]{3,20})((x|ext|extension)[ ]?[0-9]{1,4})?$">
+                  </md-input>
+
+                  <div *ngIf="complexForm.controls['phone'].hasError('required') && complexForm.controls['phone'].touched" class="alert alert-danger">
+                    Bitte korrigiere deine Telefonnummer
+                  </div>
+                  <div *ngIf="complexForm.controls['phone'].hasError('pattern') && complexForm.controls['phone'].touched" class="alert alert-danger">
+                    Bitte korrigiere deine Telefonnummer
+                  </div>
+
+                </div>
+
+
+                <div class="form-group" [ngClass]="{'has-error':!complexForm.controls['name'].valid && complexForm.controls['name'].touched}">
+                     <!--<input class="form-control" type="text" placeholder="Mein Vorname + Name" [formControl]="complexForm.controls['credentials']">-->
+                     <md-input class="form-control text-input" placeholder="Mein Vorname + Name" align="center" [formControl]="complexForm.controls['name']"
+                     pattern ="^[\u00C0-\u017Fa-zA-Z'][\u00C0-\u017Fa-zA-Z-' ]+[\u00C0-\u017Fa-zA-Z']?$">
+                  </md-input>
+                  <div *ngIf="complexForm.controls['name'].hasError('required') && complexForm.controls['name'].touched" class="alert alert-danger">
+                    Bitte korrigiere deinen Namen
+                  </div>
+                  <div *ngIf="complexForm.controls['name'].hasError('pattern') && complexForm.controls['name'].touched" class="alert alert-danger">
+                    Bitte korrigiere deinen Namen
+                  </div>
+                </div>
+
+
+
+                <!--&lt;!&ndash;</md-input>&ndash;&gt;-->
+                <!--&lt;!&ndash;<md-input placeholder="Erreichbarkeit" align="center">&ndash;&gt;-->
+
+                <p class="form-message">Deine Daten sind sicher und werden nicht an Dritte weitergegeben.</p>
+
+                <div class="button-container">
+                  <h3 class="button-action-title" [ngClass]="{'non-active-btn': !complexForm.valid,'active-btn':complexForm.valid}">Absenden</h3>
+                  <button md-fab class="big-btn btn-apply"  [ngClass]="{'non-active-btn': !complexForm.valid,'active-btn':complexForm.valid}"></button>
+
+                  <!--button md-fab class="big-btn btn-apply"></button-->
+                </div>
+
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="mobile-footer">
+        <!--tipp></tipp-->
+      </div>
+
+    </div>
+  </div>
+
+</md-sidenav-layout>

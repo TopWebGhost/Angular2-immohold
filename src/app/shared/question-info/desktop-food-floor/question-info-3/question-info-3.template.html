@@ -1,0 +1,46 @@
+<div class="qiestion-info qiestion-info--desktop">
+  <div class="qiestion-info-inner">
+
+    <!--<div class="question-opener" *ngIf="!showContainer">-->
+    <div class="question-opener">
+      <a (click)="toggleContainer()">
+        Warum ist das wichtig?
+      </a>
+    </div>
+
+    <div class="bottomSheet" [ngClass]="{'expanded':showContainer  == true,'collapsed':showContainer==false}">
+
+
+         <button md-icon-button class="side-nav-close-button hide-btn" (click)="toggleContainer()">
+        <md-icon svgSrc="/assets/icon/IH-nav-close-color.svg"></md-icon>
+      </button>
+
+      <div class="info">
+
+        <div class="content">
+          <ul>
+            <li class="no-border">
+              Mindestens einer der folgenden Punkte hat Einfluss auf die Qualität des Laminats:
+            </li>
+            <li>
+              Schichten auf den Paneelen
+            </li>
+            <li>
+              Besonders Formstabile Trägerschicht (HDF)
+            </li>
+            <li>
+              Qualität der Kanten
+            </li>
+            <li>
+              Garantieangaben (ideal: 10-15 Jahre +)
+            </li>
+          </ul>
+
+        </div>
+        <div class="footer" (click)="toggleContainer()">
+          Alles klar
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

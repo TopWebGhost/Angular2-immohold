@@ -1,0 +1,136 @@
+<div class="card-container" [@routeAnimation] = "direction" (window:resize)="onResize($event)">
+
+     <questions-desktop *ngIf="!isMobile"></questions-desktop>
+  <questions-mobile *ngIf="isMobile"></questions-mobile>
+
+
+  <md-sidenav-layout class="mobile-sidenav-layout">
+
+    <md-sidenav #start mode="over" mode="push" align="end" class="side-menu--opened">
+
+
+      <!--div class="container"-->
+
+      <button  md-icon-button class="side-nav-back-btn" on-tap="goBack($event)" (click)="start.close()" id="QuestiosBack">
+        <md-icon svgSrc="/assets/icon/IH-nav-arrow-back.svg"></md-icon>
+      </button>
+
+      <button md-icon-button (click)="start.close()" class="side-nav-close-button" id="fromQuestionsCloseToHome">
+              <md-icon svgSrc="/assets/icon/IH-nav-close.svg"></md-icon>
+      </button>
+
+      <div class="big-block">
+        <md-card class="card-main">
+
+          <img src="../../assets/img/IH-hero-placeholder.svg">
+
+          <h3>
+            Weitere Tipps rund um Haus,<br>Wohnung und DIY-Projekte
+          </h3>
+
+          <md-card class="card-btn">
+
+            <button (click)="goPortal()" md-raised-button class="button btn-light" id="fromQuestionsToPortal">
+              Portal besuchen
+            </button>
+
+          </md-card>
+        </md-card>
+
+
+        <ul>
+          <li>
+            <a (click)="goAbout()" class="btn btn-primary" id="fromQuestionsSidenavToAbout">
+              Über uns
+            </a>
+          </li>
+          <li>
+            <a (click)="goContact()" class="btn btn-primary" id="fromQuestionsSidenavToContacts">
+              Kontakt & Impressum
+            </a>
+          </li>
+          <li>
+            <a (click)="goDisclaimer()" class="btn btn-primary" id="fromQuestionsSidenavToDisclaimer">
+              Haftungsausschluss
+            </a>
+          </li>
+          <li>
+            <a (click)="goTerms()" class="btn btn-primary" id="fromQuestionsSidenavToTerms">
+              Datenschutz
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="copyright">
+        © 2016 – Immoheld
+      </div>
+
+      <!--/div-->
+    </md-sidenav>
+
+
+
+
+    <div id="Questions" class="questions-content full-height">
+
+      <div class="common-rows3">
+
+        <div class="common-hedaer">
+
+          <md-toolbar *ngIf="isMobile" color="primary">
+            <div>
+
+
+              <button  md-icon-button class="side-nav-back-btn" on-tap="goBack($event)">
+                <md-icon svgSrc="/assets/icon/IH-nav-arrow-back.svg"></md-icon>
+              </button>
+
+            </div>
+            <span (click)="goHome();" id="fromQuestionsToHome" class="site-name"><img src="../../assets/img/IH-logo.svg" width="88" height="26" /></span>
+            <div>
+              <button md-icon-button (click)="start.toggle()" class="side-nav-open-btn">
+                      <md-icon svgSrc="/assets/icon/IH-nav-hamburger.svg"></md-icon>
+              </button>
+            </div>
+          </md-toolbar>
+
+          <div *ngIf="!isMobile" class="desktop-header-cell">
+            <top-menu-desktop></top-menu-desktop>
+            <nav-desktop></nav-desktop>
+          </div>
+
+        </div>
+
+        <div class="common-topbar">
+          <topbar></topbar>
+        </div>
+
+        <div class="common-content common-content-question">
+
+          <div class="common-content-cell">
+
+            <router-outlet></router-outlet>
+
+          </div>
+
+        </div>
+
+        <div *ngIf="!isMobile" class="tipp-bottom">
+          <!--tipp-desktop></tipp-desktop-->
+          <ask-a-pro></ask-a-pro>
+        </div>
+
+        <div class="common-footer">
+          <footer-desktop *ngIf="!isMobile"></footer-desktop>
+
+        </div>
+
+      </div>
+    </div>
+
+  </md-sidenav-layout>
+
+
+</div>

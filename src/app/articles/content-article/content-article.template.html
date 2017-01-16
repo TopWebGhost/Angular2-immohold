@@ -1,0 +1,19 @@
+<div class="card-container subpage subpage--article" [@routeAnimation] = "direction" (window:resize)="onResize($event)">
+
+  <!--todo - show real content for the page shimmel / pest / floor -->
+  <desktop-article-content-shimmel-1 *ngIf="!isMobile"></desktop-article-content-shimmel-1>
+  <!--<desktop-article-content-shimmel-2 *ngIf="!isMobile"></desktop-article-content-shimmel-2>-->
+  <!--<desktop-article-content-floor-1 *ngIf="!isMobile"></desktop-article-content-floor-1>-->
+  <!--<desktop-article-content-floor-2 *ngIf="!isMobile"></desktop-article-content-floor-2>-->
+  <!--<desktop-article-content-pest-1 *ngIf="!isMobile"></desktop-article-content-pest-1>-->
+  <!--<desktop-article-content-pest-2 *ngIf="!isMobile"></desktop-article-content-pest-2>-->
+
+  <!--todo - show real content for the page shimmel / pest / floor -->
+  <mobile-article-content-shimmel-1 *ngIf="isMobile"></mobile-article-content-shimmel-1>
+  <!--<mobile-article-content-shimmel-2 *ngIf="isMobile"></mobile-article-content-shimmel-2>-->
+  <!--<mobile-article-content-floor-1 *ngIf="isMobile"></mobile-article-content-floor-1>-->
+  <!--<mobile-article-content-floor-2 *ngIf="isMobile"></mobile-article-content-floor-2>-->
+  <!--<mobile-article-content-pest-1 *ngIf="isMobile"></mobile-article-content-pest-1>-->
+  <!--<mobile-article-content-pest-2 *ngIf="isMobile"></mobile-article-content-pest-2>-->
+
+</div>

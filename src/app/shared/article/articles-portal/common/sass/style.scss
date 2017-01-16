@@ -1,0 +1,53 @@
+/*articles-portal*/
+@import "../../../../../variables.scss";
+
+.portal-articles-section {
+  background-color: #fff;
+
+  .block-title{
+    padding-top: 27px;
+    margin-bottom: 0px;
+
+    @media (min-width: $screen-md) {
+      padding-top: 38px;
+      margin-bottom: 25px;
+    }
+
+    h3 {
+      font-size: $fs-21;
+      line-height: $fs-32;
+      color: $color-blue-dark;
+      font-family: $ffb;
+      margin-bottom: 0px;
+      text-align: left;
+      margin-top: 0;
+
+      @media (min-width: $screen-md) {
+        text-align: center;
+        font-size: $fs-24;
+        line-height: $fs-32;
+        margin-top: 0;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+
+  @media (min-width: $screen-md) {
+  .columns {
+
+    .left {
+      width: 50%;
+      float: left;
+      padding-right: 32px;
+    }
+    .right {
+      width: 50%;
+      float: left;
+      padding-left: 32px;
+    }
+
+
+    }
+  }
+}

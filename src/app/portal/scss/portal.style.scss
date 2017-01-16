@@ -1,0 +1,121 @@
+@import "../../variables.scss";
+
+.portal-section {
+
+  @media (min-width: $screen-md) {}
+
+  .portal-section-title {
+    font-family:$ff;
+    font-size: $fs-16;
+    line-height: $fs-26;
+    padding: 6px 0 8px 0;
+    background-color: #FFF;
+    color: #0096db;
+    border-top: solid 1px #e4e4e4;
+    border-bottom: solid 1px #e4e4e4;
+    text-align: center;
+    margin: 0;
+
+    @media (min-width: $screen-md) {
+      font-family:$ffb;
+      font-size: $fs-30;
+      line-height: $fs-42;
+      padding: 20px 0 23px 0;
+      background-color: #008AC9;
+      letter-spacing: 0.4px;
+      color: #fff;
+      border: none;
+    }
+  }
+  .portal-section-title.active {
+    font-family:$ffb;
+    background-color: #FDD319;
+    color: $color-blue-dark;
+
+    @media (min-width: $screen-md) {
+      font-family:$ffb;
+      background-color: #008AC9;
+      color: #fff;
+    }
+  }
+  .portal-section-content {
+
+    @media (min-width: $screen-md) {}
+  }
+}
+.portal-section,
+.portal-section.collapsed {
+  .portal-section-content.collapsed,
+  .portal-section-content {
+    @media (max-width: $screen-md -1) {
+      height: 0;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+    }
+  }
+}
+.portal-section.expanded {
+  .portal-section-title {
+    font-family:$ffb;
+    background-color: #FDD319;
+    color: $color-blue-dark;
+
+    @media (min-width: $screen-md) {
+      font-family:$ffb;
+      background-color: #008AC9;
+      color: #fff;
+    }
+  }
+  .portal-section-content {
+     @media (max-width: $screen-md -1) {
+       height: auto;
+       -webkit-transition: all 0.5s ease;
+       transition: all 0.5s ease;
+     }
+   }
+}
+
+
+#portal-section-1,
+.portal-section:first-of-type {
+  .portal-section-title {
+    @media (min-width: $screen-md) {
+      padding: 60px 0 32px 0;
+    }
+  }
+}
+
+.article-section {
+  padding-top: 40px;
+
+  @media (min-width: $screen-md) {
+    padding-top: 40px;
+  }
+}
+
+.portal-page {
+  background-color: $bg-recomend;
+
+  @media (min-width: $screen-md) {
+    background-color: transparent;
+  }
+
+  .desktop-content-cell {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .block-videos {
+    background-color: #F2F9FC;
+
+    overflow: auto;
+    padding-bottom: 0px;
+    
+    @media (min-width: $screen-md) {
+      padding-bottom: 40px;
+    }
+  }
+  .block-articles {
+    overflow: auto;
+    background: #fff;
+  }
+}

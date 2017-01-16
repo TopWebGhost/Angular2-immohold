@@ -1,0 +1,52 @@
+@import "../../../variables.scss";
+
+.block-more-content {
+  background-color: $bg-more-content;
+  padding: 22px 25px 33px 25px;
+
+  .more-content-grid {
+    display: table;
+    > * {
+      display: table-row;
+      > * {
+        display: table-cell;
+        vertical-align: bottom;
+        &:first-child {
+          width: 1px;
+          padding-right: 25px;
+        }
+        &:last-child {
+          text-align: left;
+          padding-bottom: 2px;
+        }
+      }
+    }
+  }
+
+  .more-content-hero {
+    img {
+      height: 125px;
+      width: 72px;
+    }
+  }
+
+  .more-content-title {
+    font-family: $base-bold-ff;
+    font-size: $fs-sm;
+    color: $light-color;
+    text-align: center;
+    margin: 0 0 22px 0;
+  }
+
+  .more-content-description {
+    font-family: $base-bold-ff;
+    font-size: $fs-more-content-description;
+    color: $light-color;
+    margin: 0;
+  }
+
+  button {
+    margin-top: 18px;
+  }
+
+}

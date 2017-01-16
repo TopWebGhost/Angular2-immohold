@@ -1,0 +1,141 @@
+@import "../../../variables.scss";
+
+
+
+//excerpt start
+
+.excerpt {
+  background-color: $bg-excerpt;
+  border-top: 20px solid #fff;
+  padding: 0 24px 32px 24px;
+
+  margin-bottom: 10px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 0;
+  }
+
+  .top-icon{
+    width: 40px;
+    height: 40px;
+    border: 1px solid $color-blue-dark;
+    text-align: center;
+    background-color: #fff;
+    padding-top: 4px;
+    border-radius: 20px;
+    position: relative;
+    top: -20px;
+    margin:auto;
+
+    img {
+
+    }
+
+  }
+  .excerpt-position {
+    font-size: $fs-13;
+    line-height: $fs-22;
+    text-align: center;
+    color: $color-blue-dark;
+  }
+  .excerpt-title {
+    font-size: $fs-20;
+    line-height: $fs-22;
+    text-align: center;
+    color: $color-blue-dark;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-family:$ffb;
+  }
+  .excerpt-content {
+    font-size: $fs-16;
+    line-height: $fs-24;
+    text-align: left;
+    color: $color-article;
+  }
+}
+
+.excerpt.excerpt--subpage-checklist{
+  background-color: #F7F9FC;
+  margin-bottom: 0;
+  padding-bottom: 28px;
+  padding-left: 0;
+  padding-right: 0;
+
+  @media (min-width: $screen-md) {
+    //padding-bottom: 60px;
+    padding-bottom: 32px;
+  }
+  
+  @media (min-width: $screen-md) {
+    background-color: #fff;
+  }
+
+  .top-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    top: -20px;
+
+    border: 1px solid #006695;
+    text-align: center;
+    background-color: #fff;
+    padding-top: 4px;
+    position: relative;
+
+
+    @media (min-width: $screen-md) {
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      top: -30px;
+
+      border: 2px solid #006695;
+
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+  .excerpt-position {
+
+    @media (min-width: $screen-md) {
+      font-size:$fs-15;
+    }
+  }
+  .excerpt-title {
+    font-size: $fs-18;
+    line-height: $fs-22;
+    margin-top: 20px;
+    font-family: $ff;
+
+    @media (min-width: $screen-md) {
+      font-size: $fs-22;
+      line-height: $fs-22;
+      margin-top: 40px;
+      margin-bottom: 37px;
+      font-family: $ffb;
+    }
+  }
+  .excerpt-content {
+    @media (min-width: $screen-md) {
+
+    }
+
+    p {
+      margin-bottom: 20px;
+      color: $color-article;
+      font-size: $fs-15;
+      line-height: $fs-24;
+
+      @media (min-width: $screen-md) {
+        font-size: $fs-18;
+        line-height: $fs-28;
+        margin-bottom: 27px;
+      }
+    }
+  }
+}
+
+//excerpt finish

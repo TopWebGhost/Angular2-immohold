@@ -1,0 +1,203 @@
+.big-btn[md-fab] {
+  width: 80px;
+  height: 80px;
+
+  &.btn-apply {
+    background: url('../../../assets/icon/yes.svg') no-repeat center 1px;
+    background-color: $default-btn-bg;
+    background-size: 100px 100px;
+
+    &.non-active-btn {
+      background-color: $doc-bgcolor;
+      border: 1px solid $colorP;
+    }
+  }
+
+}
+
+.right-btn[md-fab], .right-btn {
+  background-color: $right-btn-bg;
+
+  span {
+    position: relative;
+    left: -2px;
+  }
+
+  md-icon {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);    
+    height: 60px;
+    margin: 0 auto;
+
+    svg {
+      margin-top: -5px;
+    }
+  }
+}
+
+[md-raised-button], [md-button] {
+  letter-spacing: 0.2px;
+  &.btn-default {
+    font-family: $base-bold-ff;
+    border-radius: 0;
+    background-color: $default-btn-bg;
+    font-size: $default-btn-fs;
+    color: $default-btn-color;
+    height: 48px;
+    padding: 0 40px;
+  }
+
+  &.btn-default.btn--homepage {
+    font-size:$fs-21;
+    letter-spacing:0.3px;
+    height: 56px;
+    padding: 0 30px;
+    min-width: 210px;
+  }
+
+  &.btn-light {
+    font-family: $base-bold-ff;
+    border-radius: 0;
+    background-color: $light-btn-bg;
+    font-size: $default-btn-fs;
+    color: $default-btn-color;
+    height: 48px;
+    padding: 0 40px;
+  }
+  &.btn-light.btn--homepage {
+    padding: 0 26px;
+  }
+
+  &.btn-full-width {
+    width: 100%;
+  }
+}
+
+[md-raised-button], [md-button] {
+
+}
+
+[md-button]:hover:after, [md-icon-button]:hover:after {
+  display: none;
+}
+
+[md-icon-button].side-nav-open-btn {
+  md-icon {
+    svg {
+      height: 13px;
+      vertical-align: initial;
+    }
+  }
+}
+
+[md-icon-button] {
+  border-radius: 40px;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+}
+
+[md-icon-button].side-nav-back-btn {
+  md-icon {
+    vertical-align: top;
+    svg {
+      width: 24px;
+      vertical-align: top;
+    }
+  }
+}
+
+[md-icon-button].side-nav-close-button {
+  md-icon {
+    vertical-align: text-top;
+    svg {
+      height: 20px;
+      vertical-align: initial;
+    }
+  }
+}
+
+// square buttons start
+// <md-card class="card-btn"><button class="button">Submit</button></md-card>
+
+.card-btn,
+.card-btn.card-btn--light{
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+
+  button {
+    //font-family: BrandonText-Regular;
+    font-family: $ffb;
+    display: block;
+    color: $footer-bg;
+    padding: 15px 20px;
+    //font-size: 1.125rem;
+    font-size: $fs-21;
+    text-decoration: none;
+    border: none;
+    background: #fff;
+    //border-radius: 5px;
+    border-radius: 0px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+  }button:active {
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+.card-btn.card-btn--orange {
+  background-color: $default-btn-bg;
+  a {
+    text-decoration: none;
+  }
+  button {
+    color: $color-blue-dark;
+    background: $default-btn-bg;
+    padding: 10px 47px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+[md-raised-button] {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+}
+// square buttons end
+
+// mood buttons
+
+.btn-happy, .btn-sad {
+  md-icon {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 50%;
+    margin-left: -13px;
+    top: 50%;
+    margin-top: -13px;
+  }
+}
+.arrow-right {
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  background-color: transparent;
+  border-top: solid 2px $color-blue-dark;
+  border-right: solid 2px $color-blue-dark;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  top: 0px;
+  margin-right: 10px;
+
+  &.arrow-right--dark-blue {
+    background-color: transparent;
+    border-top: solid 2px $color-blue-dark;
+    border-right: solid 2px $color-blue-dark;
+  }
+}

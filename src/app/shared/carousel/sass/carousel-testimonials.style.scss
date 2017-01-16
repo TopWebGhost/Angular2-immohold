@@ -1,0 +1,60 @@
+@import "../../../variables.scss";
+
+.carousel-testimonials-block {
+
+  margin-bottom: 100px;
+
+  .carousel-caption {
+    position: static;
+    padding: 50px;
+    padding-top: 44px;
+    padding-bottom: 83px;
+    background-color: #fff;
+    //border-bottom: 2px solid #D2DBE5;
+    margin: auto;
+
+    @media (min-width: $screen-md) {
+      width: 644px;
+      //height: 232px;
+      padding-top: 44px;
+      //padding-bottom: 83px;
+      padding-bottom: 44px;
+    }
+
+    h4 {
+      font-family:$ffb;
+      font-size: $fs-21;
+      color:$color-slider-h4;
+      text-shadow: none;
+      margin-top: 0;
+      letter-spacing: 0.3px;
+      margin-bottom: 13px;
+    }
+    p {
+      color:  $colorGrey;
+      font-size: $fs-16;
+      text-shadow: none;
+      letter-spacing: 0.2px;
+      line-height: $fs-23;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+    .author {
+      font-family: $ffb;
+      margin-bottom: 0;
+    }
+  }
+  .carousel-indicators {
+    bottom: -60px;
+
+    li {
+      border: solid 1px #c1c1c1;
+      width: 12px;
+      height: 12px;
+    }
+    .active {
+      border: solid 1px $color-slider-h4;
+
+    }
+  }
+}

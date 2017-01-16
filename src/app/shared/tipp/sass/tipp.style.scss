@@ -1,0 +1,417 @@
+@import "../../../variables.scss";
+
+.block-tipp {
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+
+  .block-tipp-title {
+    font-family: $ffb;
+    font-size: $fs-xsm;
+    color: $tipp-title-color;
+    text-transform: uppercase;
+    padding: 0 10px;
+    width: 54px;
+    height: 23px;
+    line-height: 23px;
+    background-color: $tipp-title-bg;
+    border-radius: 3px;
+    margin: -12px auto 0 auto;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .block-tipp-content {
+    font-size: $fs-tipp;
+    color: $title-color;
+    margin: 8px 0;
+  }
+
+  .tipp-price {
+    font-family: $ffb;
+  }
+
+  .block-tipp-button {
+    md-icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+}
+
+.block-tipp.block-tipp-desktop {
+  background-color: $tipp-desktop-bg;
+  margin-bottom: 0;
+  border-bottom: 2px solid $tipp-desktop-border-color;
+
+  hr {
+    margin: 0;
+    border: none;
+    height: 1px;
+    background: $tipp-desktop-hr-color;
+  }
+  .container {
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 12px;
+  }
+  .block-tipp-content {
+    display: inline-block;
+    font-size:$fs-tipp-dt;
+  }
+  .block-tipp-title {
+    display: inline-block;
+    margin-right: 20px;
+    height: 30px;
+    line-height: 30px;
+  }
+  img {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    margin: 0 15px;
+  }
+  a {
+    color: #faa000;
+    font-family: $base-bold-ff;
+  }
+}
+
+.block-tipp.block-tipp-desktop-nobg {
+  margin-bottom: 0;  
+
+  .container {
+    text-align: center;
+  }
+  .block-tipp-content {
+    display: inline-block;
+    font-size:$fs-tipp-dt;
+    color: $super-light-color;
+  }
+  .block-tipp-title {
+    display: inline-block;
+    margin-right: 20px;
+    height: 30px;
+    line-height: 30px;
+  }
+  img {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    margin: 0 15px;
+  }
+  a {
+    font-family: $base-bold-ff;
+    display: inline-block;
+    background-color: $doc-bgcolor;
+    color: $colorP;
+    height: 36px;
+    line-height: 36px;
+    padding: 0px 10px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.block-tipp.block-tipp-recomend {
+  text-align: center;
+  position: relative;
+  background: #fff;
+  margin-bottom: 0;
+  padding-bottom: 35px;
+  border-top: 2px solid $block-topbar-bg;
+  border-bottom: 2px solid $block-topbar-bg;
+  font-size: $fs-16;
+
+  .card-btn {
+    box-shadow: none;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+
+    button {
+      background: $bg-tipp-recomend;
+      font-size: $fs-19;
+      font-family:$ffb;
+      border-radius: 0;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      img {
+        position: relative;
+        top: -2px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .block-tipp-title {
+    font-family: $ffb;
+    font-size: $fs-xsm;
+    color: $tipp-title-color;
+    text-transform: uppercase;
+    padding: 0 10px;
+    width: 54px;
+    height: 23px;
+    line-height: 23px;
+    background-color: $tipp-title-bg;
+    border-radius: 3px;
+    margin: -12px auto 0 auto;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .block-tipp-content {
+    font-size: $fs-16;
+    color: $title-color;
+    margin: 15px 0;
+    margin-bottom: 25px;
+  }
+  button {
+    font-size: $fs-18;
+    height: 50px;
+  }
+}
+
+.block-tipp.block-tipp-vertical-button {
+  text-align: center;
+  position: relative;
+  background: $doc-bgcolor;
+  margin-bottom: 0;
+  padding-bottom: 0px;
+  border-top: 1px solid $doc-bgcolor;
+
+  button {
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 48px;
+
+  }
+
+  .block-tipp-title {
+    font-family: $ffb;
+    font-size: $fs-xsm;
+    color: $tipp-title-color;
+    text-transform: uppercase;
+    padding: 0 10px;
+    width: 54px;
+    height: 23px;
+    line-height: 23px;
+    background-color: $tipp-title-bg;
+    border-radius: 3px;
+    margin: -13px auto 0 auto;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .block-tipp-content {
+    font-size: $fs-18;
+    color: $title-color;
+    margin: 18px 0 15px 0;
+  }
+
+  .tipp-price {
+    font-family: $ffb;
+  }
+
+}
+
+.block-tipp.block-tipp-desktop {
+  background-color: $tipp-desktop-bg;
+  margin-bottom: 0;
+  border-bottom: 2px solid $tipp-desktop-border-color;
+
+  hr {
+    margin: 0;
+    border: none;
+    height: 1px;
+    background: $tipp-desktop-hr-color;
+  }
+  .container {
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 12px;
+  }
+  .block-tipp-content {
+    display: inline-block;
+    font-size:$fs-tipp-dt;
+  }
+  .block-tipp-title {
+    display: inline-block;
+    margin-right: 20px;
+    height: 30px;
+    line-height: 30px;
+  }
+  img {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    margin: 0 15px;
+  }
+  a {
+    color: #faa000;
+    font-family: $base-bold-ff;
+  }
+}
+
+.block-tipp.block-tipp-desktop-nobg {
+  margin-bottom: 0;
+
+  .container {
+    text-align: center;
+  }
+  .block-tipp-content {
+    display: inline-block;
+    font-size:$fs-tipp-dt;
+    color: $super-light-color;
+  }
+  .block-tipp-title {
+    display: inline-block;
+    margin-right: 20px;
+    height: 30px;
+    line-height: 30px;
+  }
+  img {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    margin: 0 15px;
+  }
+  a {
+    font-family: $base-bold-ff;
+    display: inline-block;
+    background-color: $doc-bgcolor;
+    color: $colorP;
+    height: 36px;
+    line-height: 36px;
+    padding: 0px 10px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.block-tipp.block-tipp-subpage {
+  text-align: center;
+  position: relative;
+  background: #fff;
+  margin-bottom: 50px;
+  padding-bottom: 35px;
+  border-top: 2px solid $block-topbar-bg;
+  border-bottom: 2px solid $block-topbar-bg;
+  font-size: $fs-16;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 63px;
+    border: 1px solid #008ac9;
+  }
+
+  .card-btn {
+    box-shadow: none;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+
+    button {
+      background: $bg-tipp-recomend;
+      font-size: $fs-19;
+      font-family:$ffb;
+      border-radius: 0;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      img {
+        position: relative;
+        top: -2px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .block-tipp-title {
+    font-family: $ffb;
+    font-size: $fs-xsm;
+    color: $tipp-title-color;
+    text-transform: uppercase;
+    padding: 0 10px;
+    width: 54px;
+    height: 23px;
+    line-height: 23px;
+    background-color: $tipp-title-bg;
+    border-radius: 3px;
+    margin: -12px auto 0 auto;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .block-tipp-content {
+    color: $title-color;
+    margin: 25px 0;
+    font-size: $fs-16;
+    line-height: $fs-24;
+
+    @media (min-width: $screen-md) {
+      font-size: $fs-19;
+      line-height: $fs-26;
+      padding: 0 80px;
+      margin-bottom: 10px;
+    }
+  }
+  button {
+    font-size: $fs-18;
+    margin-top: 15px;
+    height: 50px;
+  }
+}
+.block-tipp.block-tipp-portal-mobile {
+  text-align: center;
+  position: relative;
+  background: #fff;
+  margin-bottom: 0;
+  padding-bottom: 35px;
+  border-top: 1px solid #f3f3f3;
+  //border-bottom: 2px solid $block-topbar-bg;
+  font-size: $fs-16;
+
+  .card-btn {
+    box-shadow: none;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+
+    button {
+      background: $bg-tipp-recomend;
+      font-size: $fs-19;
+      font-family:$ffb;
+      border-radius: 0;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      img {
+        position: relative;
+        top: -2px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .block-tipp-title {
+    font-family: $ffb;
+    font-size: $fs-xsm;
+    color: $tipp-title-color;
+    text-transform: uppercase;
+    padding: 0 10px;
+    width: 54px;
+    height: 23px;
+    line-height: 23px;
+    background-color: $tipp-title-bg;
+    border-radius: 3px;
+    margin: -12px auto 0 auto;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .block-tipp-content {
+    font-size: $fs-16;
+    color: $title-color;
+    margin: 15px 0;
+    margin-bottom: 25px;
+  }
+  button {
+    font-size: $fs-18;
+    height: 50px;
+  }
+}

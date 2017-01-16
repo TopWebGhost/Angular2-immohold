@@ -1,0 +1,13 @@
+@import "../../../variables.scss";
+
+table.table-subarticles {
+  width: 100%;
+  border-collapse: collapse;
+
+  td {
+    border: 2px solid #ececec;
+    padding: 7px;
+    font-size: $fs-16;
+    line-height: $fs-22;
+  }
+}

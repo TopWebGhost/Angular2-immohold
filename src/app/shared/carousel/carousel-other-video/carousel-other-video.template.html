@@ -1,0 +1,30 @@
+<div class="carousel-other-video">
+    <div class="block-video-other block-video-other-mobile">
+        <div class="container">
+            <div class="block-title">
+                Andere interessante Videos
+            </div>
+            </div>
+
+            <carousel [interval]="myInterval" [noWrap]="noWrapSlides">
+                <slide *ngFor="let slidez of slides; let index=index"
+                       [active]="slidez.active">
+
+                    <div class="video-container">
+                        <iframe class="youtube-video" width="" height="" [src]="slidez.link | safe"  frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="container">
+                    <div class="texter">
+                        <a href="#" class="video-title">
+                            {{slidez.title}}
+                        </a>
+                        <tag-line-video-other></tag-line-video-other>
+                    </div>
+                    </div>
+
+                </slide>
+            </carousel>
+
+        </div>
+
+</div>

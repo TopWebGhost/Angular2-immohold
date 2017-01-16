@@ -1,0 +1,13 @@
+<div class="card-container" [@routeAnimation] = "direction" (window:resize)="onResize($event)">
+
+  <analysis-desktop *ngIf="!isMobile"></analysis-desktop>
+
+
+  <analysis-mobile *ngIf="isMobile"></analysis-mobile>
+
+
+</div>
+
+
+
+

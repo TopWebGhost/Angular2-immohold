@@ -1,0 +1,25 @@
+@import "../../variables.scss";
+
+.block-evaluation {
+  display: block;
+  background-color: $bg-info-block;
+  padding: 25px 0;
+
+  @media (min-width: $screen-md) {
+    background-color: $top-bgcolor;
+    padding: 20px 0 52px 0;
+  }
+
+  .block-evaluation-content {
+    color: $super-light-color;
+    font-size: $fs-lg;
+    font-family: $base-bold-ff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    a {
+      color: $super-light-color;
+    }
+  }
+}

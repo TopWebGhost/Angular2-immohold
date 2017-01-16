@@ -1,0 +1,114 @@
+<md-sidenav-layout class="mobile-sidenav-layout">
+
+    <md-sidenav #start mode="over" mode="push" align="end" class="side-menu--opened">
+
+        <button md-icon-button (click)="start.close()" class="side-nav-close-button">
+            <md-icon svgSrc="/assets/icon/IH-nav-close.svg"></md-icon>
+        </button>
+
+        <div class="big-block">
+            <mobile-sidenav-top-block></mobile-sidenav-top-block>
+            <mobile-sidenav-menu></mobile-sidenav-menu>
+        </div>
+        <mobile-sidenav-copyright></mobile-sidenav-copyright>
+
+    </md-sidenav>
+
+
+    <div class="subpage--article--mobile">
+
+        <div class="mobile-rows3">
+
+            <div class="mobile-hedaer">
+
+                <md-toolbar color="primary">
+                    <div>
+                        <a (click)="goBack()">
+                            <button md-icon-button class="side-nav-back-btn">
+                                <md-icon svgSrc="/assets/icon/IH-nav-arrow-back.svg"></md-icon>
+                            </button>
+                        </a>
+                    </div>
+                    <span (click)="goHome();" class="site-name"><img src="../../assets/img/IH-logo.svg" width="88" height="26"/></span>
+                    <div>
+                        <button md-icon-button (click)="start.toggle()" class="side-nav-open-btn">
+                            <md-icon svgSrc="/assets/icon/IH-nav-hamburger.svg"></md-icon>
+                        </button>
+                    </div>
+                </md-toolbar>
+
+            </div>
+
+            <div class="mobile-content">
+
+                <div class="mobile-content-cell">
+
+
+                    <div class="subarticle">
+                        <article-header-floor-2></article-header-floor-2>
+
+                        <div class="container">
+                            <div class="title">
+                                Laminat gehört zu den beliebtesten Bodenbelägen in Deutschland, vielleicht denkst Du auch aktuell über diese Alternative zu Holzparkett und Teppichboden nach. Im Folgenden lernst Du die wichtigsten Vor- und Nachteile von Laminat kennen, um Dich gezielt für oder gegen diesen Boden zu entscheiden. Seine Stärken zeigt Laminat dabei vor allem im Preis und seiner Pflege.
+                            </div>
+
+                            <div class="subarticle">
+
+                                    <div class="title">
+                                        Material und Preis von Laminat
+                                    </div>
+                                    <div class="content">
+                                        Laminat unterscheidet sich von klassischem Parkett durch seine Oberschicht aus Kunststoff anstelle von Holz. Im Vergleich zu reinem Naturholz ist die Anschaffung von Laminat deutlich günstiger, bietet Dir jedoch weiterhin die beliebte Holzoptik. Außerdem ist Laminatböden sehr strapazierfähig und verzeiht dir schneller kleinere Kratzer und ähnliche Schäden. Bei einem echten Holzboden musst du schneller mit einer Schädigung des Naturmaterials rechnen. Der Nachteil von Laminat gegenüber Holzparkett: Die echte Naturoptik und -haptik fehlt, bei genauem Anblick lässt sich die künstliche Oberfläche dieses Bodenbelags erkennen.
+                                    </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <tipp-subpage></tipp-subpage>
+
+                    <div class="list-of-subarticles">
+                        <div class="subarticle">
+                            <div class="container">
+                                <div class="title">
+                                    Die Pflege des Laminatbodens
+                                </div>
+                                <div class="content">
+                                    Was die alltägliche Reinigung des Bodens betrifft, bietet Dir Laminat große Vorteile. Die Kunststoffoberfläche ist pflegeleicht und sollte gelegentlich nebelfeucht gereinigt werden. Schmutz und Staub setzt sich weniger auf dem Laminat ab, findet jedoch in den Ritzen und Fugen von echtem Holzparkett schneller einen Platz. Der Nachteil zeigt sich bei einer längeren Nutzung des Bodens, da sich Laminat nicht abschleifen lässt. Während Du einem echten Holzboden nach einem oder mehreren Schleifdurchgängen wieder eine intakte Optik verleihst, fehlt Dir beim Parkett diese Möglichkeit. Ist das Laminat nach einigen Jahren oder Jahrzehnten nicht mehr ansehnlich, ist der komplette Austausch die einzige Alternative.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="subarticle">
+                            <div class="container">
+                                <div class="title">
+                                    Beschaffenheit und gesundheitliche Auswirkungen
+                                </div>
+                                <div class="content">
+                                    Echter Holzboden bietet Dir einen natürlichen Charme, den man fühlen und riechen kann. Dies ist bei Laminat mit seiner Kunststoffoberfläche anders, wobei die Qualität des verwendeten Kunststoffs entscheidend ist. Beide Bodenbeläge sind grundsätzlich für Allergiker geeignet, nach dem frischen Verlegen von Laminat kann es jedoch noch zu Ausdünstungen des Materials kommen. Eine echte gesundheitliche Gefährdung ist auf die Dauer nicht zu fürchten, da jedes Laminat in Deutschland strengen Qualitätskontrollen unterliegt.Wenn Du auf echten Holzcharme von Parkett verzichten kannst und stärker auf einen günstigen Preis und eine simple Reinigung achtest, wird Laminat in fast allen Räumen Deinen Wohnvorstellungen gerecht.
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <rate-for-subpage></rate-for-subpage>
+
+                    <other-articles-to-floor-article-1></other-articles-to-floor-article-1>
+
+                    <block-note-subpage-mobile></block-note-subpage-mobile>
+
+                </div>
+
+            </div>
+
+            <div class="mobile-footer">
+                <!--tipp></tipp-->
+            </div>
+        </div>
+    </div>
+</md-sidenav-layout>

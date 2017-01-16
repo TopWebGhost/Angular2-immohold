@@ -1,0 +1,29 @@
+<div class="nav-desktop">
+
+  <div class="container">
+
+    <md-toolbar>
+      <div>
+        <button on-tap="goBack($event);" md-icon-button class="side-nav-back-btn">
+          <md-icon svgSrc="/assets/icon/IH-nav-arrow-back-color.svg"></md-icon>
+        </button>
+      </div>
+      <div class="logo-container">
+        <div class="logo">
+          <!--a href="#"><img class="logo-img" src="../../assets/img/IH-hero-placeholder.svg" alt="" width="44" height="75"></a-->
+          <a href="#"><img class="logo-img" src="../../assets/img/hero/Immoheld-circular-nobg.svg" alt="" width="100" height="100"></a>
+        </div>
+        <div class="logo-text">
+          <a href="#">Schimmel-Schnell-Check</a>
+        </div>
+      </div>
+      <div>
+        <button md-icon-button (click)="toHome()" id="fromNavigationCrossToHome" class="side-nav-close-button">
+          <md-icon svgSrc="/assets/icon/IH-nav-close-color.svg"></md-icon>
+        </button>
+      </div>
+    </md-toolbar>
+
+  </div>
+
+</div>

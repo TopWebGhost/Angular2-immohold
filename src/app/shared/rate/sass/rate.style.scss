@@ -1,0 +1,97 @@
+@import "../../../variables.scss";
+
+.rate-video {
+  display: -webkit-flex;
+  display: flex;
+  padding: 8px 0;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 0;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  > div {
+    height: 40px;
+    width: 50%;
+    text-align: center;
+    &:first-child {
+      border-right: 1px solid $best-video-rate-separator-color;
+    }
+  }
+
+  &.rate-good, &.rate-bad {
+    display: block;
+    > div {
+      height: auto;
+      width: 100%;
+      border: none;
+    }
+  }
+
+}
+
+.rate,
+.rate-base {
+  display: -webkit-flex;
+  display: flex;
+  padding: 8px 0;
+  background-color: #fff;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 0;
+  }
+
+  > div {
+    height: 35px;
+    width: 50%;
+    text-align: center;
+    //padding-top: 8px;
+
+    @media (min-width: $screen-md) {
+      //height: 54px;
+      height: 38px;
+      padding-top: 0px;
+      margin-top: 6px;
+    }
+
+    &:first-child {
+      border-right: 1px solid $best-video-rate-separator-color;
+    }
+  }
+
+}
+.rate.rate-good,
+.rate.rate-bad {
+  display: block;
+  > div {
+    height: auto;
+    width: 100%;
+    border: none;
+  }
+}
+.rate-block {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: #fff;
+
+  @media (min-width: $screen-md) {
+    padding-top: 20px;
+  }
+
+  p {
+    color: $color-blue-dark;
+    margin-bottom: 10px;
+  }
+  .rate-tile {
+    color: $color-blue-dark;
+    margin-bottom: 10px;
+
+    font-size: $fs-14;
+    line-height: $fs-32;
+
+    @media (min-width: $screen-md) {
+      font-size: $fs-16;
+      line-height: $fs-32;
+    }
+  }
+}

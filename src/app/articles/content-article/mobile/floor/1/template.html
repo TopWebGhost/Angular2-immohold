@@ -1,0 +1,114 @@
+<md-sidenav-layout class="mobile-sidenav-layout">
+
+    <md-sidenav #start mode="over" mode="push" align="end" class="side-menu--opened">
+
+        <button md-icon-button (click)="start.close()" class="side-nav-close-button">
+            <md-icon svgSrc="/assets/icon/IH-nav-close.svg"></md-icon>
+        </button>
+
+        <div class="big-block">
+            <mobile-sidenav-top-block></mobile-sidenav-top-block>
+            <mobile-sidenav-menu></mobile-sidenav-menu>
+        </div>
+        <mobile-sidenav-copyright></mobile-sidenav-copyright>
+
+    </md-sidenav>
+
+
+    <div class="subpage--article--mobile">
+
+        <div class="mobile-rows3">
+
+            <div class="mobile-hedaer">
+
+                <md-toolbar color="primary">
+                    <div>
+                        <a (click)="goBack()">
+                            <button md-icon-button class="side-nav-back-btn">
+                                <md-icon svgSrc="/assets/icon/IH-nav-arrow-back.svg"></md-icon>
+                            </button>
+                        </a>
+                    </div>
+                    <span (click)="goHome();" class="site-name"><img src="../../assets/img/IH-logo.svg" width="88" height="26"/></span>
+                    <div>
+                        <button md-icon-button (click)="start.toggle()" class="side-nav-open-btn">
+                            <md-icon svgSrc="/assets/icon/IH-nav-hamburger.svg"></md-icon>
+                        </button>
+                    </div>
+                </md-toolbar>
+
+            </div>
+
+            <div class="mobile-content">
+
+                <div class="mobile-content-cell">
+
+
+                    <div class="subarticle">
+                        <article-header-floor-1></article-header-floor-1>
+
+                        <div class="container">
+                            <div class="title">
+                                Mit Laminat entscheidest Du Dich für einen preisbewussten Bodenbelag mit attraktiver Optik. Um den schönen Anblick des Bodens über viele Jahre hinweg aufrechtzuerhalten, ist eine abgestimmte Reinigung und clevere Pflege unverzichtbar. Im Folgenden erfährst Du, wie Du Deinen Laminatboden pfleglich behandelst und was Du vermeiden solltest.
+                            </div>
+
+                            <div class="subarticle">
+
+                                    <div class="title">
+                                        Wie muss Laminat gereinigt werden?
+                                    </div>
+                                    <div class="content">
+                                        Wie bei echtem Parkettboden ist zu viel Wasser auf dem Laminat schädlich. Besser ist es, die Oberfläche im Bedarfsfall nebelfeucht zu reinigen. Im Fachhandel werden spezielle Reinigungsprodukte für Laminat angeboten, damit sich Schmutz und Flecken auch bei geringem Einsatz von Wasser mühelos lösen. Das klassisch feuchte Wischen solltest Du unterlassen, da sonst Wasser in die unteren Schichten der Laminat-Leisten eindringt und diese aufquellen. Da ein intakter Laminatboden über eine glatte Oberfläche verfügt, ist der meiste Schmutz ohnehin mühelos mit einem Staubsauger oder Besen aufzunehmen und sehr einfach zu entfernen.
+                                    </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <tipp-subpage></tipp-subpage>
+
+                    <div class="list-of-subarticles">
+                        <div class="subarticle">
+                            <div class="container">
+                                <div class="title">
+                                    Wie lässt sich Laminatboden zusätzlich pflegen?
+                                </div>
+                                <div class="content">
+                                    Eine zusätzliche Pflege neben der klassischen Reinigung wird mit speziellen Präparaten aus dem Fachhandel möglich. Diese trägst Du nach der Reinigung auf dem Boden auf, um diesem beispielsweise einen attraktiven Glanz zu verleihen. Manche Pflegeprodukte sind genauso für die Reinigung des Bodens geeignet, so dass Du nur ein Reinigungsmittel kaufen musst. Damit der Boden nicht an seiner Strahlkraft und Farbwirkung verliert, solltest Du die Pflegemittel exakt dosieren. Zu wenig Pflegemittel sorgt nicht für die gewünschten Effekte, zu viel kann die Oberfläche des Bodens angreifen. Die meisten Hersteller bieten ihre Pflegemittel auf ökologischer Basis an, was auch für Deinen Laminat eine attraktive Wahl ist.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="subarticle">
+                            <div class="container">
+                                <div class="title">
+                                    Abschließende Tipps für Deinen Laminatboden
+                                </div>
+                                <div class="content">
+                                    Selbst bei bester Pflege und regelmäßiger Reinigung ist es möglich, dass Dein Laminatboden unansehnlich geworden ist oder einen Schaden genommen hat. Bei modernem Klick-Laminat lassen sich bisweilen einzelne Leisten austauschen, um zu einer intakten Optik zurückzukehren. Bei größeren Flächen solltest Du bedenken, dass Du Laminat nicht wie einen Parkettboden abschleifen kannst. Gefällt Dir die Optik des Bodens nach einigen Jahren nicht mehr, bleibt nur der komplette Austausch des Bodens, was Mühen und Kosten mit sich bringt. Umso wichtiger ist es deshalb, die Pflege des Laminats ernstzunehmen und möglichst lange den intaktem und gepflegtem Anblick zu erhalten.
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                    <rate-for-subpage></rate-for-subpage>
+
+                    <other-articles-to-floor-article-2></other-articles-to-floor-article-2>
+
+                    <block-note-subpage-mobile></block-note-subpage-mobile>
+
+                </div>
+
+            </div>
+
+            <div class="mobile-footer">
+                <!--tipp></tipp-->
+            </div>
+        </div>
+    </div>
+</md-sidenav-layout>

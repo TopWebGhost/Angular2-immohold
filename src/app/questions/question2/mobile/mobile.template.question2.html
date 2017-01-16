@@ -1,0 +1,120 @@
+
+<!-- Mold page -->
+
+<div class="block-question">
+
+  <div class="container flex flex--main">
+
+    <div class="flex">
+      <div class="text-top">
+        Welches Material ist betroffen?
+      </div>
+
+    </div>
+    <div class="flex flex--big gird-block">
+
+      <div class="gird-block-inner">
+
+        <div cols="3" class="question-list question-list-3">
+          <div  class="item"  *ngFor="let element of materials"  [ngClass]="{'active-item': element.title == material}" (click)="trackBy(element.title)" id="fromMaterialQuestionToHealth-{{element.id}}">
+                <a  class="inner">
+              <span class="icon">
+                <span class="icon-hover">
+                  <img src="../../assets/icon/{{element.icon}}.svg" width="{{element.width}}">
+                </span>
+              </span>
+              <span class="text">
+                <span class="text-title">
+                  {{element.title}}
+                </span>
+                <span class="text-content">
+                  {{element.secondTitle}}
+                </span>
+
+              </span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="flex">
+      <div class="text-bottom">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<question-info-2-mobile></question-info-2-mobile>
+
+
+<!-- Food Floor -->
+
+<!--div class="block-question question2-food-floor">
+
+  <div class="container flex flex--main">
+
+    <div class="flex">
+      <div class="text-top">
+        Wo soll das Laminat<br>verlegt werden?
+      </div>
+
+    </div>
+
+    <div class="flex flex--big gird-block">
+
+      <div class="gird-block-inner">
+
+        <div cols="2" class="question-list question-list-3 question-list-2-col">
+
+          <div class="item">
+               <a  class="inner">
+              <span class="icon">
+                <span class="icon-hover">
+                  <img src="../../assets/icon/IH-private.svg" width="75">
+                </span>
+              </span>
+              <span class="text">
+                <span class="text-title">
+                  Im Privat- und Wohnbereich
+                </span><br>
+                <span class="text-content">
+                  (z.B. Wohn- oder Schlafzimmer)
+                </span>
+              </span>
+            </a>
+          </div>
+
+          <div class="item">
+               <a  class="inner">
+              <span class="icon">
+                <span class="icon-hover">
+                  <img src="../../assets/icon/IH-business.svg" width="71">
+                </span>
+              </span>
+              <span class="text">
+                <span class="text-title">
+                  Im gewerblichen oder öffentlichen Raum
+                </span><br>
+                <span class="text-content">
+                  (z.B. Arztpraxis)
+                </span>
+              </span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="flex">
+      <div class="text-bottom">
+        Die Beanspruchung des Laminats ist ein<br>entscheidendes Kriterium für die Wahl des<br>passenden Materials.
+      </div>
+    </div>
+  </div>
+</div>
+<question-info-2-mobile-food-floor></question-info-2-mobile-food-floor-->

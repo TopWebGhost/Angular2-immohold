@@ -1,0 +1,112 @@
+
+<!-- Mold page -->
+
+<md-card class="question-card question3-card">
+
+  <div class="block-question">
+
+    <div class="container flex flex--main">
+
+
+      <div class="flex">
+        <div class="text-top">
+          Wie steht es gerade um deine Gesundheit?
+        </div>
+
+      </div>
+      <div class="flex flex--big gird-block">
+
+        <div class="gird-block-inner">
+
+          <div cols="2" class="question-list question-list-3 question-list-2-col">
+            <div class="item"  *ngFor="let element of healthes"  [ngClass]="{'active-item': element.title == health}" (click) = "trackBy(element.title)" id="fromHealthQuestionToAnalysis-{{element.id}}">
+                 <a  class="inner">
+                <span class="icon">
+                  <span class="icon-hover">
+                    <img src="../../assets/icon/{{element.icon}}.svg" width="{{element.width*1.25}}">
+                  </span>
+                </span>
+                <span class="text">
+                  <span class="text-title">
+                    {{element.title}}
+                  </span>
+                  <span class="text-content">
+                    {{element.secondTitle}}
+                  </span>
+                </span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="flex">
+        <div class="text-bottom">
+          Wenn du gesundheitlich angeschlagen bist oder dein Immunsystem anderweitig geschwächt ist, kann der  Kontakt mit Schimmel gefährlich sein. In diesem Fall ist es ratsam, einen Profi mit der Schimmelbeseitigung zu  beauftragen.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <question-info-3-desktop></question-info-3-desktop>
+
+</md-card>
+
+
+<!-- Food Floor -->
+
+<!--md-card class="question-card question3-card">
+
+  <div class="block-question">
+
+    <div class="container flex flex--main">
+
+
+      <div class="flex">
+        <div class="text-top">
+          Welche Qualität soll das Laminat haben?
+        </div>
+
+      </div>
+      <div class="flex flex--big gird-block">
+
+        <div class="gird-block-inner">
+
+          <div cols="2" class="question-list question-list-3 question-list-2-col">
+            <div class="item"  *ngFor="let element of healthes"  [ngClass]="{'active-item': element.title == health}" (click) = "trackBy(element.title)" id="fromHealthQuestionToAnalysis-{{element.id}}">
+                 <a  class="inner">
+                <span class="icon">
+                  <span class="icon-hover">
+                    <img src="../../assets/icon/{{element.icon}}.svg" width="{{element.width*1.25}}">
+                  </span>
+                </span>
+                <span class="text">
+                  <span class="text-title">
+                    {{element.title}}
+                  </span>
+                  <span class="text-content">
+                    {{element.secondTitle}}
+                  </span>
+                </span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="flex">
+        <div class="text-bottom">
+          Die Qualität des Laminats hat einen wesentlichen Einfluss auf die<br>
+          Langlebigkeit des Bodens sowie die Materialanmutung.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <question-info-3-desktop-food-floor></question-info-3-desktop-food-floor>
+
+</md-card-->

@@ -1,0 +1,67 @@
+<div class="block-video-other video-other--mobile">
+  <div class="container">
+    <div class="block-title">
+      Videos zum Thema
+    </div>
+  </div>
+    <ul>
+      <li *ngIf="isMold">
+        <div class="video-container">
+          <!--<iframe class="youtube-video" width="" height="" src="https://www.youtube.com/embed/ZRaglkcBwts?enablejsapi=1" frameborder="0" allowfullscreen></iframe>-->
+          <youtube-video [videoId]="'ZRaglkcBwts'"></youtube-video>
+
+        </div>
+        <div class="texter">
+          <div class="container">
+          <a href="#" class="article-title">
+            Schimmel im Bad entfernen
+          </a>
+          <tag-line-video-other></tag-line-video-other>
+        </div>
+        </div>
+      </li>
+
+      <li *ngIf="isMold">
+        <div class="video-container">
+          <!--<iframe class="youtube-video" width="" height="" src="https://www.youtube.com/embed/S66a8dejVYQ?enablejsapi=1" frameborder="0" allowfullscreen></iframe>-->
+          <youtube-video [videoId]="'S66a8dejVYQ'"></youtube-video>
+        </div>
+        <div class="texter">
+          <div class="container">
+          <a href="#" class="article-title">
+            Schimmel entfernen – Schimmel im Haus
+          </a>
+          <tag-line-video-other></tag-line-video-other>
+        </div>
+        </div>
+      </li>
+
+      <li *ngIf="isFoodFloor">
+        <div class="video-container">
+          <youtube-video [videoId]="'InOFeb9SM9E'"></youtube-video>
+        </div>
+        <div class="texter">
+          <div class="container">
+            <a href="#" class="article-title">
+              Vorbereitungen beim Laminat verlegen
+            </a>
+            <tag-line-video-other></tag-line-video-other>
+          </div>
+        </div>
+      </li>
+      <li *ngIf="isFoodFloor">
+        <div class="video-container">
+          <youtube-video [videoId]="'R-BnfrTL1y8'"></youtube-video>
+        </div>
+        <div class="texter">
+          <div class="container">
+            <a href="#" class="article-title">
+              Abschlussarbeiten beim Laminat verlegen
+            </a>
+            <tag-line-video-other></tag-line-video-other>
+          </div>
+        </div>
+      </li>
+    </ul>
+</div>
+

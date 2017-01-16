@@ -1,0 +1,22 @@
+<div class="carousel-testimonials-block">
+  <div class="carousel slide">
+    <div class="carousel-inner">
+      <div *ngFor="let slide of slides; let i = index" [ngClass]="['item', activeSlide == i ? 'active' : 'hidden-item']">
+        <div class="carousel-caption">
+          <div class="imager">
+              <img src="{{slide.image}}" alt="{{slide.author}}">
+          </div>
+          <h4>{{slide.title}}</h4>
+          <p>{{slide.text}}</p>
+          <p class="author">{{slide.author}}</p>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" (click)="prev()" *ngIf="slides.length > 1">
+      <span class="icon-prev" aria-hidden="true"></span>
+    </a>
+    <a class="right carousel-control" (click)="next()" *ngIf="slides.length > 1">
+      <span class="icon-next" aria-hidden="true"></span>
+    </a>
+  </div>
+</div>

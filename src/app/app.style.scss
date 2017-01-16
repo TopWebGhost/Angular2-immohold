@@ -1,0 +1,15 @@
+@import "./px-to-rem.scss";
+@import "./variables.scss";
+@import "./fonts.scss";
+@import "./normalize.scss";
+
+@import "../assets/css/carousel/carousel-bootstrap.scss";
+
+@import "./helpers.scss";
+@import "./buttons.scss";
+@import "./base.scss";
+@import "./grid.scss";
+
+body {
+  background-color: $doc-bgcolor;
+}

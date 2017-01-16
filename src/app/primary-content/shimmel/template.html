@@ -1,0 +1,9 @@
+<div class="card-container" [@routeAnimation] = "direction" (window:resize)="onResize($event)">
+
+<!-- <h1>Recomendation shimmel</h1> -->
+
+  <primary-content-shimmel-desktop *ngIf="!isMobile"></primary-content-shimmel-desktop>
+
+  <primary-content-shimmel-mobile *ngIf="isMobile"></primary-content-shimmel-mobile>
+
+</div>

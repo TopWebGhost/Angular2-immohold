@@ -1,0 +1,29 @@
+@import "../../variables.scss";
+
+.block-ask-a-pro {
+
+  font-size: $fs-16;
+  line-height: $fs-29;
+  padding: 13px 0;
+  background-color: #EAF0F8;
+  color: $color-blue-dark;
+  text-align: center;
+
+  .btn-default {
+    margin-left: 30px;
+    height: 36px;
+    padding: 0 30px;
+    font-size: $fs-16;
+  }
+
+
+  @media (min-width: $screen-md) {
+    padding-top: 49px;
+    padding-bottom: 58px;
+
+    font-size: $fs-18;
+    line-height: $fs-29;
+  }
+
+}
+

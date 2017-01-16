@@ -1,0 +1,107 @@
+<md-sidenav-layout class="mobile-sidenav-layout">
+
+  <md-sidenav #start mode="over" mode="push" align="end" class="side-menu--opened">
+
+
+    <button  md-icon-button class="side-nav-back-btn" on-tap="goBack($event)">
+      <md-icon svgSrc="/assets/icon/IH-nav-arrow-back.svg"></md-icon>
+    </button>
+
+    <button md-icon-button (click)="start.close()" class="side-nav-close-button">
+            <md-icon svgSrc="/assets/icon/IH-nav-close.svg"></md-icon>
+    </button>
+
+
+    <div class="big-block">
+      <mobile-sidenav-top-block></mobile-sidenav-top-block>
+      <mobile-sidenav-menu></mobile-sidenav-menu>
+    </div>
+    <mobile-sidenav-copyright></mobile-sidenav-copyright>
+
+  </md-sidenav>
+
+
+
+
+  <div id="Photo" class="component-photo mobile-photo full-height">
+
+    <div class="mobile-rows3">
+
+      <div class="mobile-hedaer">
+
+        <md-toolbar color="primary">
+          <div>
+            <a (click)="goBack();" id="fromUploadPhotoGoBack">
+              <button  md-icon-button class="side-nav-back-btn">
+                <md-icon svgSrc="/assets/icon/IH-nav-arrow-back.svg"></md-icon>
+              </button>
+            </a>
+          </div>
+          <span (click)="goHome();" id="fromUploadPhotoToHome" class="site-name"><img src="../../assets/img/IH-logo.svg" width="88" height="26" /></span>
+          <div>
+            <button md-icon-button (click)="start.toggle()" class="side-nav-open-btn">
+                    <md-icon svgSrc="/assets/icon/IH-nav-hamburger.svg"></md-icon>
+            </button>
+          </div>
+        </md-toolbar>
+
+      </div>
+
+      <div class="mobile-content">
+
+        <div class="mobile-content-cell">
+
+
+          <div class="container flex flex--main full-height">
+
+            <div class="flex">
+
+              <div>
+                <h1 class="page-title">
+                  Foto hochgeladen
+                  <span class="uploaded-photo-name">{{image.title}}</span>
+                </h1>
+              </div>
+
+            </div>
+
+            <div class="flex flex--small">
+
+
+
+              <div class="uploaded-photo-container">
+
+                <img class="uploaded-photo" src={{image.src}}>
+
+                <div><a class="remove-image" (click)="continueWithoutPhoto()" id="fromUploadPhotoToContinueWithoutPhoto">Foto löschen</a></div>
+
+              </div>
+
+            </div>
+
+            <div class="flex">
+
+              <div>
+                <a [routerLink]="['/callback-info']">
+                  <button md-fab class="big-btn right-btn next-page-btn">
+                    <md-icon svgSrc="../../assets/icon/IH-nav-arrow-down-button.svg"></md-icon>
+                  </button>
+                </a>
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="mobile-footer">
+      </div>
+
+    </div>
+  </div>
+
+</md-sidenav-layout>

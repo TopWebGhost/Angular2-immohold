@@ -1,0 +1,31 @@
+<div class="qiestion-info qiestion-info--desktop">
+    <div class="qiestion-info-inner">
+
+        <div class="question-opener" (click)="toggleContainer()">
+            <a>
+                Warum ist das wichtig?
+            </a>
+        </div>
+
+        <div class="bottomSheet" [ngClass]="{'expanded':showContainer  == true,'collapsed':showContainer==false}">
+
+            <button md-icon-button class="side-nav-close-button hide-btn" (click)="toggleContainer()">
+                <md-icon svgSrc="/assets/icon/IH-nav-close-color.svg"></md-icon>
+            </button>
+
+            <div class="info">
+                <div class="content">
+                    <ul>
+                        <li>
+                            Je größer die betroffene Fläche ist, desto höher ist die Wahrscheinlichkeit, dass der Schimmel nach erster Bearbeitung wieder auftritt. Alles bis zu 0,5 m2 (ca. 8 DIN A4 Blätter) kannst du i.d.R. selber entfernen.
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="footer" (click)="toggleContainer()">
+                    Alles klar
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

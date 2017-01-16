@@ -1,0 +1,7 @@
+<div class="full-height" [@routeAnimation] = "direction" (window:resize)="onResize($event)">
+
+  <question1-desktop *ngIf="!isMobile"></question1-desktop>
+
+  <question1-mobile *ngIf="isMobile"></question1-mobile>
+
+</div>

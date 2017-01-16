@@ -1,0 +1,14 @@
+<div (mouseenter)="pause()" (mouseleave)="play()" class="carousel slide">
+  <ol class="carousel-indicators" *ngIf="slides.length > 1">
+    <li *ngFor="let slidez of slides" [class.active]="slidez.active === true" (click)="select(slidez)" id="CarouselIndicator"></li>
+  </ol>
+  <div class="carousel-inner"><ng-content></ng-content></div>
+  <a class="left carousel-control" (click)="prev()" *ngIf="slides.length" id="CarouselSlidePrev">
+    <span class="icon-prev" aria-hidden="true"></span>
+
+  </a>
+  <a class="right carousel-control" (click)="next()" *ngIf="slides.length"  id="CarouselSlideNext">
+    <span class="icon-next" aria-hidden="true"></span>
+
+  </a>
+</div>

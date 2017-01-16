@@ -1,0 +1,123 @@
+@import "../../variables.scss";
+
+
+.component-callback {
+  //label,
+  //.md-input-placeholder{
+  //  @media (min-width: $screen-md) {
+  //    font-size: $fs-18;
+  //  }
+  //}
+
+  .callback-card {
+    padding: 0;
+    width: 650px;
+  }
+
+  .page-title {
+    font-size: $fs-h1-small;
+    color: $colorH1;
+    text-align: center;
+    font-weight: normal;
+    font-family: $base-bold-ff;
+    margin-top: 34px;
+
+    @media (min-width: $screen-md) {
+      color: $super-light-color;
+      font-size: $fs-h1-dt;
+      margin-top: 15px;
+    }
+
+  }
+
+  .form-title {
+    @media (min-width: $screen-md) {
+      font-size: $fs-h3-dt;
+      color: $colorH1;
+      font-weight: normal;
+      font-family: $base-bold-ff;
+      text-align: center;
+      padding: 0 30px;
+      margin-top: 34px;
+    }
+  }
+
+  .button-container {
+    text-align: center;
+    padding-bottom: 30px;
+
+    .button-action-title {
+      font-size: $fs-button-action-title;
+      color: $colorH3;
+      font-weight: normal;
+      font-family: $base-bold-ff;
+      margin: 20px 0;
+
+      &.non-active-btn {
+        display: none;
+      }
+    }
+
+  }
+
+
+  .text-input {
+    width: 100%;
+  }
+
+  .form-content {
+    @media (min-width: $screen-md) {
+      margin: 0 auto;
+    }
+  }
+
+  .form-message {
+    font-size: $fs-sm;
+    color: $colorGrey;
+    padding: 20px 0 20px 50px;
+    background: url('../../assets/icon/IH-icon-data-security.svg') no-repeat left center;
+
+    @media (min-width: $screen-md) {
+      margin-top: 20px;
+    }
+  }
+
+  .form {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .form-group {
+    @media (min-width: $screen-md) {
+      width: 355px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .button-container {
+    @media (min-width: $screen-md) {
+      margin-bottom: -64px;
+    }
+  }
+
+  .problem-photo-bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    background-position: center center;
+    background-size: cover;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+
+  }
+
+}

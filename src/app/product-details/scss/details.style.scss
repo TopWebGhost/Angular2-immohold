@@ -1,0 +1,196 @@
+@import "../../variables.scss";
+
+.component-details {
+  .page-title {
+    font-size: $fs-h1-small;
+    color: $colorH1;
+    font-weight: normal;
+    font-family: $ff;
+    text-align: center;
+
+    @media (min-width: $screen-md) {
+      font-size: $fs-h1-dt;
+      margin: 50px 0 63px 0;
+    }
+  }
+
+  .button-container {
+    margin: 10px 0 30px 0;
+    width: 270px;
+
+    @media (min-width: $screen-md) {
+      margin: 70px 0;
+      margin-bottom: 51px;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+  h3 {
+    font-family: $ff;
+    font-size:$fs-26;
+    line-height: $fs-36;
+    color: $color-blue-dark;
+    margin-bottom: 65px;
+  }
+}
+
+.details-manual-container {
+  width: 100%;
+  max-width: 800px;
+}
+
+.details-manual {
+  display: table;
+  width: 100%;
+  @media (min-width: $screen-md) {
+    -weblit-display: flex;
+    display: flex;
+  }
+
+  > * {
+    display: table-row;
+    @media (min-width: $screen-md) {
+      display: block;
+    }
+
+    > * {
+      display: table-cell;
+      vertical-align: middle;
+      @media (min-width: $screen-md) {
+        display: block;
+      }
+
+      &:first-child {
+        width: 1px;
+        @media (min-width: $screen-md) {
+          width: auto;
+        }
+      }
+    }
+  }
+
+  .details-item {
+    
+    @media (min-width: $screen-md) {
+     width: 33.33%; 
+    }
+
+    .details-item-container {
+      @media (min-width: $screen-md) {
+        position: relative;        
+      }
+
+      &:after, &:before {
+        @media (min-width: $screen-md) {
+          content: '';
+          display: block;
+          height: 2px;
+          background-color: $top-bgcolor;
+          width: calc(50% - 37px);
+
+          position: absolute;
+          top: 50%;
+          margin-top: -1px;
+        }
+      }
+
+      &:after {
+        @media (min-width: $screen-md) {
+          right: 0;
+        }
+      }
+
+      &:before {
+        @media (min-width: $screen-md) {
+          left: 0;
+        }
+      }
+
+    }
+
+    &:first-child {
+      .details-item-container {
+
+        &:before {
+          @media (min-width: $screen-md) {
+            display: none;
+          }
+        }
+      }
+    }
+    &:last-child {
+      .details-item-container {
+        &:after {
+          @media (min-width: $screen-md) {
+            display: none;
+          }
+        }
+      }
+    }
+
+  }
+
+
+
+  .details-item-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 3px solid $top-bgcolor;
+    text-align: center;
+    font-size: 0;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.05);
+
+    @media (min-width: $screen-md) {
+      width: 75px;
+      height: 75px;
+      border-radius: 75px;
+      box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.05);
+      margin: 0 auto;
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+
+    img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+  }
+
+  .details-item-description {
+    padding-left: 20px;
+    font-size: $fs-base;
+    color: $tag-color;
+    line-height: 1.5;
+
+    @media (min-width: $screen-md) {
+      padding: 25px 20px 0 20px;
+      text-align: center;
+    }
+  }
+
+  .details-separator-container {
+
+    .details-separator {
+      width: 1px;
+      background-color: $top-bgcolor;
+      height: 29px;
+      margin: 0 auto;
+    }
+  }
+
+  .details-separator-cell {
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+}

@@ -1,0 +1,20 @@
+@import "../../variables.scss";
+
+home-desktop {
+  display: none!important;
+  @media (min-width: $screen-md) {
+    display: block!important;
+  }
+}
+
+home-mobile {
+  display: block!important;
+  @media (min-width: $screen-md) {
+    display: none!important;
+  }
+}
+
+/* common block for various pages (both mobile and desktopp)*/
+.block-tipp {
+
+}

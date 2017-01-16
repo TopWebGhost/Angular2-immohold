@@ -1,0 +1,47 @@
+  <md-sidenav #end align="end" style="display: none;">
+    End Side Drawer
+    <br>
+    <button md-button (click)="end.close()">Close</button>
+  </md-sidenav>
+
+
+<nav style="display: none;">
+      <span>
+        <a [routerLink]=" ['./'] " id="sidenavToHome">
+          Index
+        </a>
+      </span>
+  |
+  <span>
+        <a [routerLink]=" ['./home'] " id="sidenavToHome">
+          Home
+        </a>
+      </span>
+  |
+  <span>
+        <a [routerLink]=" ['./detail'] " id="sidenavToDetails">
+          Detail
+        </a>
+      </span>
+  |
+  <span>
+        <a [routerLink]=" ['./about']" id="sidenavToHome">
+          About
+        </a>
+      </span>
+</nav>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<pre  style="display: none" class="app-state">this.appState.state = {{ appState.state | json }}</pre>
+
+<footer style = display:none>
+  <span>WebPack Angular 2 Starter by <a [href]="url">@AngularClass</a></span>
+  <div>
+    <a [href]="url">
+      <img [src]="angularclassLogo" width="25%">
+    </a>
+  </div>
+</footer>

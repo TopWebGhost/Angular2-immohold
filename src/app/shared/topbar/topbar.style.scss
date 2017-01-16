@@ -1,0 +1,90 @@
+@import "../../variables.scss";
+
+.block-topbar {
+  text-align: center;
+  position: relative;
+  overflow: visible;
+  width: 100%;
+  height: 6px;
+  background-color: $block-topbar-bg;
+  box-shadow: inset 0px 3px 3px rgba(0,0,0,0.1);
+
+  @media (min-width: $screen-md) {
+    height: 10px;
+  }
+
+   .bar-line--progress {
+      background-color: $block-topbar-active-bg;
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      -webkit-transition: 1s;
+      transition: 1s;
+      box-shadow: inset 0px 3px 3px rgba(0,0,0,0.1);
+    }
+
+  .block-number {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: $doc-bgcolor;
+    text-align: center;
+    line-height: 48px;
+    font-weight: bold;
+    font-size:$fs-number;
+    color: $colorP;
+
+    position: absolute;
+    left: 50%;
+    margin-left: -24px;
+    top: -18px;
+    z-index: 2;
+
+    -webkit-transition: 2s;
+    transition: 2s;
+
+    .block-number-inner {
+      position: relative;
+      width: 48px;
+      height: 48px;
+
+      font-family: $ff;
+      font-weight: normal;
+    }
+    .block-number-inner:before {}
+  }
+
+}
+
+.block-topbar.block-topbar--step-one{
+  .bar-line--progress{
+    width: 33%;
+  }
+  .block-number-inner:before {
+    content: '1';
+  }
+}
+.block-topbar.block-topbar--step-zero{
+  .bar-line--progress{
+    width: 0;
+  }
+  .block-number-inner:before {
+    content: '1';
+  }
+}
+.block-topbar.block-topbar--step-two{
+  .bar-line--progress{
+    width: 66%;
+  }
+  .block-number-inner:before {
+    content: '2';
+  }
+}
+.block-topbar.block-topbar--step-three{
+  .bar-line--progress{
+    width: 100%;
+  }
+  .block-number-inner:before {
+    content: '3';
+  }
+}

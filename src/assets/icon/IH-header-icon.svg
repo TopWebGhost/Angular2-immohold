@@ -1,0 +1,23 @@
+
+<svg width="41px" height="52px" viewBox="699 33 41 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M738.93799,60.6979461 C738.93799,67.5354509 733.762134,72.8905699 729.408278,76.1827019 C725.296246,79.2930651 721.12833,81.1972251 720.03504,81.6719415 C718.941749,81.1884013 714.744368,79.238358 710.598805,76.1015236 C706.22666,72.7899795 701.014225,67.4295662 701.014225,60.6979461 C701.014225,59.7635136 701.004064,40.8983886 701,38.1515628 C708.126709,34.8797254 718.826933,34 720.033007,34 C721.809096,34 732.265464,35.0853182 738.952215,38.1515628 C738.952215,40.8983886 738.93799,59.7635136 738.93799,60.6979461 L738.93799,60.6979461 Z" id="path-1"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Fill-36" stroke="none" fill="none">
+        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+        <use stroke="#006695" stroke-width="2" xlink:href="#path-1"></use>
+    </g>
+    <g id="noun_293_cc" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(708.297620, 44.341915)">
+        <g id="Group" transform="translate(0.000000, 0.000000)" fill="#006695">
+            <polygon id="Shape" points="19.5579288 7.58303398 19.5579288 2.09084605 16.2187702 2.09084605 16.2187702 4.26509362 11.9255663 0 0 11.8481276 2.86213592 11.8481276 2.86213592 19.5145631 10.2559871 19.5145631 10.2559871 13.242025 13.5951456 13.242025 13.5951456 19.5145631 20.9889968 19.5145631 20.9889968 11.8481276 23.8511327 11.8481276"></polygon>
+        </g>
+    </g>
+</svg>

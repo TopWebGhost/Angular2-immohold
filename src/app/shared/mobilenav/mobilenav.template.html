@@ -1,0 +1,59 @@
+  <div class="container">
+    <button md-icon-button (click)="start.close()" class="side-nav-close-button">
+            <md-icon svgSrc="/assets/icon/IH-nav-close.svg"></md-icon>
+    </button>
+
+    <div class="big-block">
+      <md-card class="card-main">
+
+        <img _ngcontent-ixg-9="" height="142" src="../../assets/img/IH-hero-placeholder.svg" width="80">
+
+        <h3>
+          Die Immo hält dank Immoheld!
+        </h3>
+
+        <md-card class="card-btn">
+
+          <button (click)="goPortal()" md-raised-button class="button" id="FromMobileNavToPortal">
+            Portal besuchen
+          </button>
+
+        </md-card>
+      </md-card>
+
+
+        <ul>
+            <li>
+                <a (click)="goAbout()" class="btn btn-primary" id="fromSidenavToAbout">
+                    Über uns
+                </a>
+            </li>
+            <li>
+                <a (click)="goContact()" class="btn btn-primary" id="fromSidenavToContact">
+                    Kontakt & Impressum
+                </a>
+            </li>
+            <li>
+                <a (click)="goDisclaimer()" class="btn btn-primary" id="fromSidenavToDisclaimer">
+                    Haftungsausschluss
+                </a>
+            </li>
+            <li>
+                <a (click)="goTerms()" class="btn btn-primary" id="fromSidenavToTerms">
+                    Datenschutz
+                </a>
+            </li>
+        </ul>
+
+
+    </div>
+
+    <div class="copyright">
+      © 2016 – Immoheld
+    </div>
+
+  </div>
+
+
+
+

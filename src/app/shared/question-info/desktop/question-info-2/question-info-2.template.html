@@ -1,0 +1,35 @@
+<div class="qiestion-info qiestion-info--desktop">
+    <div class="qiestion-info-inner">
+
+        <!--<div class="question-opener" *ngIf="!showContainer">-->
+        <div class="question-opener">
+            <a (click)="toggleContainer()">
+                Warum ist das wichtig?
+            </a>
+        </div>
+
+        <div class="bottomSheet" [ngClass]="{'expanded':showContainer  == true,'collapsed':showContainer==false}">
+
+
+            <button md-icon-button class="side-nav-close-button hide-btn" (click)="toggleContainer()">
+                <md-icon svgSrc="/assets/icon/IH-nav-close-color.svg"></md-icon>
+            </button>
+
+            <div class="info">
+                <div class="content">
+
+                    <ul>
+                        <li>
+                            Je wasserdurchlässiger das Material ist, desto komplizierter wird die Schimmelentfernung, da der Schimmel tiefer ins Material eindringen kann. Bei Schimmel auf offenporigen Flächen solltest du einen Profi hinzuziehen.
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="footer" (click)="toggleContainer()">
+                    Alles klar
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+@import "../../../variables.scss";
+
+.carousel-other-video {
+
+  .block-video-other.block-video-other-mobile  {
+    background-color: $bg-list-of-articles;
+
+    .tag--time {
+      float: right;
+    }
+
+    .container {
+      padding: 15px 20px;
+    }
+    .block-title {
+      font-size: $fs-base;
+      color: $colorH2;
+      font-family: $ffb;
+      //margin-bottom: 20px;
+      margin-bottom: 0px;
+    }
+
+    .video-title {
+      font-size: $fs-base-dt;
+      color: $color-blue-dark;
+      display: inline-block;
+      padding-top: 5px;
+      margin-bottom: 8px;
+    }
+  }
+
+}

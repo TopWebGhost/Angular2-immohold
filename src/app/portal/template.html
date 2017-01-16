@@ -1,0 +1,5 @@
+<div class="card-container" [@routeAnimation] = "direction" (window:resize)="onResize($event)">
+  <portal-desktop *ngIf="!isMobile"></portal-desktop>
+  <portal-mobile *ngIf="isMobile"></portal-mobile>
+</div>
+ 

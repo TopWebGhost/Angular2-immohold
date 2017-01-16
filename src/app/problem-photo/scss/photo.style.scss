@@ -1,0 +1,49 @@
+@import "../../variables.scss";
+
+
+.component-photo {
+  .flex--small, .flex--big {
+    text-align: center;
+  }
+
+  .page-title {
+
+    font-family: $base-bold-ff;
+    font-weight: normal;
+    font-size: $fs-photo-page-title;
+    color: $light-color;
+    text-align: center;
+    line-height: 1.28;
+
+    @media (min-width: $screen-md) {
+      font-size: $fs-h1-dt;
+      font-family: $base-ff;
+      margin-top: 50px;
+    }
+
+    .uploaded-photo-name {
+      font-family: $base-ff;
+      font-size: $fs-base;
+      color: $colorGrey;
+      display: block;
+      padding-top: 5px;
+    }
+
+  }
+
+  .uploaded-photo-container {
+    margin: 0 -20px;
+  }
+
+  .uploaded-photo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .next-page-btn {
+    margin: 20px 0;
+  }
+
+}
+

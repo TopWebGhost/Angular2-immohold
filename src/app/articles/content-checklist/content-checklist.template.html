@@ -1,0 +1,7 @@
+<div class="card-container subpage subpage--checklist" [@routeAnimation] = "direction" (window:resize)="onResize($event)">
+
+  <desktop-checklist-content *ngIf="!isMobile"></desktop-checklist-content>
+
+  <mobile-checklist-content *ngIf="isMobile"></mobile-checklist-content>
+
+</div>

@@ -1,0 +1,108 @@
+
+<!-- Mold page -->
+
+<md-card class="question-card question1-card">
+
+  <div class="block-question pollution-question">
+
+    <div class="container flex flex--main">
+
+      <div class="flex question-description">
+        <div>
+          <div class="text-top">
+            Wie groß ist die betroffene Fläche?
+          </div>
+
+          <div class="text-top-subtitle">
+            Gib die größte Schimmelstelle an:
+          </div>
+          <div class="text-top-value">
+            {{Title}} m²
+          </div>
+        </div>
+      </div>
+      <div class="flex flex--big gird-block">
+        <div class="gird-block-inner gird-block-inner-step1">
+          <div>
+            <input class="pollution-slider" type="range" [(ngModel)]="range" (ngModelChange)="changeRange($event)" on-tap="onTap($event)"  on-click="click($event)" on-drag="onDrag($event)"  on-mouseenter="input($event); false" [attr.data-range]="range" name="points" [min]="min" [max]="max">
+            <div class="polution-slider-theme">
+              <div class="polution-slider-bg">
+                <div class="polution-slider-level polution-slider-low"></div>
+                <div class="polution-slider-level polution-slider-mid"></div>
+                <div class="polution-slider-level polution-slider-high"></div>
+              </div>
+            </div>
+            <div class="pollution-level">
+              <div class="pollution-img pollution-0"></div>
+              <div class="pollution-img pollution-1"></div>
+              <div class="pollution-img pollution-2"></div>
+            </div>
+            <div class="card-bg"></div>
+          </div>
+
+        </div>
+      </div>
+      <div class="flex right-btn-container">
+        <div>
+          <button md-fab class="big-btn right-btn" on-tap="goNext($event); false" id="fromQuestion1toQuestion2">
+            <md-icon svgSrc="/assets/icon/IH-nav-arrow-down-button.svg"></md-icon>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <question-info-1-desktop></question-info-1-desktop>
+
+</md-card>
+
+<!-- Food Floor -->
+
+<!--md-card class="question-card question1-card">
+
+  <div class="block-question pollution-question question1-food-floor">
+
+    <div class="container flex flex--main">
+
+      <div class="flex question-description">
+        <div>
+
+          <div class="text-top">
+            Wie groß ist die betroffene Fläche?
+          </div>
+
+          <div class="text-top-subtitle">
+            Gib die größte Schimmelstelle an:
+          </div>
+
+        </div>
+      </div>
+      <div class="flex flex--big gird-block">
+        <div class="gird-block-inner gird-block-inner-step1">
+          <div class="select-problem-size">
+
+            <ng-select
+              [options]="sizeOptions"
+              [placeholder]="M2"
+              theme="default">
+            </ng-select>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="flex right-btn-container">
+        <div>
+          <button md-fab class="big-btn right-btn" on-tap="goNext($event); false" id="fromQuestion1toQuestion2">
+            <md-icon svgSrc="/assets/icon/IH-nav-arrow-down-button.svg"></md-icon>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <question-info-1-desktop-food-floor></question-info-1-desktop-food-floor>
+
+</md-card-->

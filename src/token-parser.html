@@ -1,0 +1,14 @@
+hello
+<script>
+var hash = window.location.hash.replace('#', ''),
+	parts = hash.split('&'),
+	paramsCount = parts.length,
+	obj = {};
+for (var i = 0; i < parts.length; i ++) {
+	var p = parts[i].split('=');
+	obj[p[0]] = p[1];
+}
+
+window.opener.window.__tokenReceived(obj);
+window.close();
+</script>

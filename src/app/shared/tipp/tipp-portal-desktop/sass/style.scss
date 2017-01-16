@@ -1,0 +1,40 @@
+@import "../../../../variables.scss";
+
+.tipp-portal-desktop-block {
+  padding-bottom: 62px;
+
+
+  .inner {
+    padding: 20px 0 25px 0;
+    background-color: #EAF0F8;
+    color: $color-blue-dark;
+    font-size: $fs-18;
+    line-height: $fs-29;
+    position: relative;
+    text-align: left;
+
+    .btn-default {
+      margin-left: 0px;
+      margin-right: 27px;
+      float: right;
+      height: 36px;
+      padding: 0 40px;
+      font-size: $fs-16;
+    }
+    .imager {
+      float: left;
+      width: 50px;
+      margin-right: 70px;
+
+      img {
+        height: 116px;
+        width: 116px;
+        position: relative;
+        top: -68px;
+        //margin-bottom: -30px;
+      }
+    }
+  }
+
+}
+

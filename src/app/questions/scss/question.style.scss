@@ -1,0 +1,581 @@
+@import "../../variables.scss";
+
+.questions-content {
+  overflow: auto;
+}
+
+.question-card {
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  z-index: 3;
+  padding-left: 0;
+  padding-right: 0;
+
+  @media (min-width: $screen-md) {
+    position: relative;
+    //height: 410px;
+    padding-bottom: 65px;
+  }
+
+  &.question3-card {
+    position: relative;
+  }
+
+  &.question2-card, &.question3-card {
+    .gird-block {
+      //height: 165px!important;
+    }
+  }
+
+  .block-question {
+    //height: 380px;
+    &.pollution-question {
+      height: auto;
+    }
+    .container {
+      width: 100%;
+    }
+  }
+
+
+  // food floor styles
+  .question1-food-floor {
+
+    .text-top-subtitle {
+      font-size: $fs-base;
+    }
+
+    .select-problem-size {
+      width: 320px;
+      padding: 0 0 30px 0;
+      margin: 0 auto;
+    }
+
+    .gird-block {
+      z-index: 3;
+    }
+
+  }
+
+}
+
+.block-question {
+  height: 100%;
+  position: relative;
+  padding-bottom: 40px;
+
+  @media (min-width: $screen-md) {
+    padding-bottom: 0;
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  .question-description {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+  }
+
+  .text-top {
+    text-align: center;
+    font-size: $fs-analasiere;
+    color: $colorP;
+    padding-top: 30px;
+
+    @media (min-width: $screen-md) {
+      padding-top: 15px;
+      //      padding-bottom: 45px;
+      padding-bottom: 15px;
+      font-size: $fs-analasiere-dt;
+    }
+
+  }
+
+  .text-top-subtitle {
+    text-align: center;
+    font-size: $fs-base;
+    color: $colorGrey;
+    margin: 10px 0 5px 0;
+
+    @media (min-width: $screen-md) {
+      margin-top: 0;
+      font-size: $fs-question-item-dt;
+    }
+  }
+
+  .text-top-value {
+    text-align: center;
+    font-family: $base-bold-ff;
+    font-size: $fs-lg;
+    color: $colorP;
+    display: inline-block;
+    background-color: $doc-bgcolor;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @media (min-width: $screen-md) {
+      font-size: $fs-question-value-dt;
+      background-color: transparent;
+    }
+  }
+
+  .text-bottom {
+    //    text-align: center;
+    color: #4f555d;
+    line-height: $fs-24;
+    font-size: $fs-16;
+    padding-bottom: 10px;
+
+    @media (min-width: $screen-md) {
+
+      font-size: $fs-18;
+      line-height: $fs-26;
+      padding: 10px 58px 24px 58px;
+      font-family: $ff;
+
+    }
+
+  }
+  .gird-block {
+    width: 100%;
+
+    .gird-block-inner {
+      width: 100%;
+    }
+  }
+  .question-list {
+
+    @media (min-width: $screen-md) {
+      margin: 30px 0;
+    }
+
+    .item {
+      text-align: center;
+      padding-bottom: 10px;
+
+      a {
+        text-decoration: none;
+        text-align: center;
+
+        &:hover {
+          .icon-hover {
+            border-radius: 75px;
+            background-color: rgba(0, 0, 0, 0.12);
+          }
+        }
+      }
+      .icon {
+        text-align: center;
+        padding-bottom: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        height: 85px;
+
+        @media (min-width: $screen-md) {
+          margin-bottom: 10px;
+        }
+
+        .icon-hover {
+          display: inline-block;
+          vertical-align: middle;
+          width: 85px;
+          height: 85px;
+          font-size: 0;
+          &:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+          }
+          img {
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+
+      }
+      .text {
+        text-align: center;
+        display: block;
+        color: $top-bgcolor;
+
+        .text-title {
+
+        }
+        .text-content{
+          color :#979797;
+        }
+
+        @media (min-width: $screen-md) {
+          max-width: none;
+          font-size: $fs-16;
+          line-height: $fs-22;
+          padding: 0 20px;
+
+        }
+      }
+
+    }
+  }
+  .question-list.question-list-2 {
+    .icon {
+      width: 120px;
+    }
+    .item {
+      .text {
+        min-height: 165px;
+      }
+    }
+
+  }
+  .question-list.question-list-3 {
+
+    @media (min-width: $screen-md) {
+      display: -webkit-flex;
+      display: flex;
+    }
+
+    > * {
+      @media (min-width: $screen-md) {
+        width: 33.33%;
+      }
+    }
+
+    &.question-list-2-col {
+
+      display: flex;
+
+      @media (min-width: $screen-md) {
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+
+      > * {
+        width: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+    }
+
+    md-grid-tile figure {
+      -webkit-align-items: flex-start; /* Safari 7.0+ */
+      align-items: flex-start;
+      display: none;
+    }
+
+    .icon {
+      width: 100px;
+      height: 100px;
+
+    }
+  }
+
+  .gird-block-inner-step1 {
+    text-align: center;
+  }
+
+  &.question2-food-floor,
+  &.question3-food-floor {
+    .text-bottom {
+      text-align: center;
+      color: $color-grey;
+      font-size: $fs-14;
+
+      @media (min-width: $screen-md) {
+        font-size: $fs-16;
+      }
+
+    }
+  }
+
+}
+
+.pollution-question {
+  position: relative;
+
+  @media (min-width: $screen-md) {
+    position: static;
+  }
+
+  .question-description {
+    @media (min-width: $screen-md) {
+      padding-bottom: 30px;
+    }
+  }
+
+  .right-btn-container {
+    margin-bottom: 0px;
+  }
+
+  .right-btn {
+    margin: 20px 0;
+    @media (min-width: $screen-md) {
+      margin: 30px 0 0 0;
+    }
+    position: relative;
+    z-index: 2;
+  }
+
+  .card-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,1);
+  }
+}
+
+.pollution-slider {
+  width: 280px;
+  height: 60px;
+  position: relative;
+  z-index: 20;
+  margin: 0 auto;
+  opacity: 0;
+
+  @media (min-width: $screen-md) {
+    width: 490px;
+    height: 56px;
+  }
+}
+
+.polution-slider-theme {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: -64px;
+  z-index: 1;
+
+  @media (min-width: $screen-md) {
+    width: 490px;
+    margin-top: -56px;
+  }
+
+  .polution-slider-bg {
+    position: relative;
+    width: 280px;
+    height: 53px;
+    background: url('../../../assets/img/range-slider/IH-slider-bg.svg') no-repeat left top;
+    background-size: 280px 53px;
+
+    @media (min-width: $screen-md) {
+      width: 490px;
+      height: 56px;
+      background: url('../../../assets/img/range-slider/IH-slider-desktop-bg.svg') no-repeat left top;
+      background-size: 490px 56px;
+    }
+
+    .polution-slider-level {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      background-position: left 0px bottom 1px;
+      background-repeat: no-repeat;
+
+      &.polution-slider-low {
+        background-image: url('../../../assets/img/range-slider/IH-slider-low.svg');
+        @media (min-width: $screen-md) {
+          background-image: url('../../../assets/img/range-slider/IH-slider-desktop-low.svg');
+          //          background-size: 114px 27px;
+        }
+      }
+      &.polution-slider-mid {
+        background-image: url('../../../assets/img/range-slider/IH-slider-mid.svg');
+        @media (min-width: $screen-md) {
+          background-image: url('../../../assets/img/range-slider/IH-slider-desktop-mid.svg');
+          background-position: left 0px bottom 1px;
+        }
+      }
+      &.polution-slider-high {
+        background-image: url('../../../assets/img/range-slider/IH-slider-high.svg');
+        background-position: left 0px bottom 1px;
+        @media (min-width: $screen-md) {
+          background-image: url('../../../assets/img/range-slider/IH-slider-desktop-high.svg');
+          background-position: left 0px bottom 1px;
+        }
+      }
+    }
+  }
+}
+
+.pollution-slider[data-range="0"] {
+  & + .polution-slider-theme {
+    .polution-slider-low {
+      opacity: 1;
+    }
+  }
+}
+
+.pollution-slider[data-range="1"] {
+  & + .polution-slider-theme {
+    .polution-slider-mid {
+      opacity: 1;
+    }
+  }
+}
+
+.pollution-slider[data-range="2"] {
+  & + .polution-slider-theme {
+    .polution-slider-high {
+      opacity: 1;
+    }
+  }
+}
+
+.pollution-slider[data-range="3"] {
+  & + .polution-slider-theme {
+    .polution-slider-max {
+      opacity: 1;
+    }
+
+  }
+}
+
+.pollution-level {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+
+  @media (min-width: $screen-md) {
+    position: fixed;
+    top: 150px;
+    bottom: 112px;
+  }
+
+  .pollution-img {
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    @media (min-width: $screen-md) {
+      top: 0;
+    }
+
+
+    background-repeat: no-repeat;
+    background-position: center 30%;
+
+    @media (min-width: $screen-md) {
+      background-size: 100%;
+    }
+
+    opacity: 0;
+    -webkit-transition:opacity 0.5s linear;
+    transition:opacity 0.5s linear;
+
+    &.pollution-0 {
+      background-image: url('../../../assets/img/pollution/IH-slider-mold-low.svg');
+    }
+    &.pollution-1 {
+      background-image: url('../../../assets/img/pollution/IH-slider-mold-mid.svg');
+    }
+    &.pollution-2 {
+      background-image: url('../../../assets/img/pollution/IH-slider-mold-high.svg');
+    }
+    &.pollution-3 {
+      background-image: url('../../../assets/img/pollution/IH-slider-mold-max.svg');
+    }
+
+  }
+
+}
+
+.pollution-slider[data-range="0"] {
+  & + div + .pollution-level {
+    .pollution-0 {
+      opacity: 1;
+    }
+  }
+}
+
+.pollution-slider[data-range="1"] {
+  & + div + .pollution-level {
+    .pollution-1 {
+      opacity: 1;
+    }
+  }
+}
+
+.pollution-slider[data-range="2"] {
+  & + div + .pollution-level {
+    .pollution-2 {
+      opacity: 1;
+    }
+  }
+}
+
+.pollution-slider[data-range="3"] {
+  & + div + .pollution-level {
+
+    .pollution-3 {
+      opacity: 1;
+    }
+
+  }
+}
+
+
+.block-tipp-question{
+  background-color: #008AC9;
+  height: 45px;
+  line-height:45px;
+  font-size: $fs-14;
+  color: $super-light-color;
+  text-align: center;
+
+  @media (min-width: $screen-md) {
+    position: relative;
+    z-index: 10;
+    margin-bottom: -25px;
+    margin-top: 25px;
+
+    height: 35px;
+    line-height:35px;
+  }
+
+  p, a {
+    display: block;
+    margin: 0;
+    line-height:45px;
+    color: $super-light-color;
+    font-family: $ffb;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    @media (min-width: $screen-md) {
+      font-size:$fs-14;
+      line-height:35px;
+    }
+
+  }
+}
+
+.gird-block-inner {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.gird-block-inner.gird-block-inner-step1 {
+
+  position: static;
+
+}
+
+

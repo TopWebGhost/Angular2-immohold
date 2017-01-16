@@ -1,0 +1,76 @@
+<div id="Upload" class="component-upload desktop-upload full-height">
+
+  <div class="desktop-rows3">
+
+    <div class="desktop-header">
+
+      <div class="desktop-header-cell">
+
+        <top-menu-desktop></top-menu-desktop>
+
+        <nav-desktop></nav-desktop>
+
+      </div>
+
+    </div>
+
+    <div class="desktop-content">
+
+      <div class="desktop-content-cell">
+
+
+        <div class="container flex flex--main full-height">
+
+          <div class="flex flex--small">
+
+            <div>
+              <h1 class="page-title">Noch schnell ein Foto…</h1>
+            </div>
+
+          </div>
+
+          <div class="flex flex--big">
+            <div>
+
+              <div>
+                <label class="upload-photo-button-container">
+                  <input type="file" accept="image/*" capture="camera" (change)="selectFile($event)" />
+                  <a md-fab class="upload-photo-button">
+                    <md-icon svgSrc="../../assets/icon/IH-camera.svg"></md-icon>
+                  </a>
+
+                  <p class="action-description">Per Klick auf den Button hochladen oder<br>per Drag & Drop hier platzieren</p>
+
+                </label>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="flex">
+            <!--div>
+              <a class="continue-link" href="#">Weiter ohne Foto</a>
+            </div-->
+
+            <div class="more-info-link-container">
+              <a class="more-info-link" (click)="goNext()" id="fromUploadPhotoToProblemPhoto">
+                Weiter ohne Foto
+                </a>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="desktop-footer">
+      <footer-desktop></footer-desktop>
+    </div>
+
+  </div>
+
+</div>

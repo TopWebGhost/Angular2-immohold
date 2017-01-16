@@ -1,0 +1,7 @@
+<div class="card-container subpage subpage--article" [@routeAnimation] = "direction" (window:resize)="onResize($event)">
+
+  <terms-desktop *ngIf="!isMobile"></terms-desktop>
+
+  <terms-mobile *ngIf="isMobile"></terms-mobile>
+
+</div>

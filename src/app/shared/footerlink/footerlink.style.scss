@@ -1,0 +1,17 @@
+@import "../../variables.scss";
+
+.footer-link-container {
+  padding: 5px;
+  text-align: center;
+
+  .footer-link {
+    font-size: $fs-xsm;
+    md-icon {
+      vertical-align: top;
+      height: 24px;
+      width: 23px;
+    }
+  }
+
+}
+

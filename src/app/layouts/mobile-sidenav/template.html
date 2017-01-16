@@ -1,0 +1,17 @@
+<md-sidenav #start mode="over" mode="push" align="end" class="side-menu--opened">
+
+    <button md-icon-button (click)="start.close()" class="side-nav-close-button">
+            <md-icon svgSrc="/assets/icon/IH-nav-close.svg"></md-icon>
+    </button>
+
+    <div class="big-block">
+
+        <mobile-sidenav-top-block></mobile-sidenav-top-block>
+        <mobile-sidenav-menu></mobile-sidenav-menu>
+
+    </div>
+
+    <mobile-sidenav-copyright></mobile-sidenav-copyright>
+   
+
+  </md-sidenav>

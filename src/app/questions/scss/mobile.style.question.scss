@@ -1,0 +1,256 @@
+@import "./question.style.scss";
+
+
+/*.block-question {
+  height: 100%;
+
+  .container{
+    height: 100%;
+  }
+
+  .text-top {
+    text-align: center;
+    font-size: $fs-analasiere;
+    color: $colorP;
+    padding-top: 30px;
+  }
+
+  .text-top-subtitle {
+    text-align: center;
+    font-size: $fs-base;
+    color: $colorGrey;
+    margin: 10px 0 5px 0;
+  }
+
+  .text-top-value {
+    text-align: center;
+    font-family: $base-bold-ff;
+    font-size: $fs-lg;
+    color: $colorP;
+  }
+
+  .text-bottom {
+    text-align: center;
+    color: $colorGrey;
+    line-height: 1.6;
+    padding-bottom: 10px;
+  }
+  .gird-block {
+    width: 100%;
+
+    .gird-block-inner {
+      width: 100%;
+    }
+  }
+  .question-list {
+    .item {
+
+      a {
+        text-decoration: none;
+      }
+      .icon {
+        //display: block;
+        text-align: center;
+        //margin-bottom: 30px;
+        padding-bottom: 30px;
+        display: table-cell;
+        vertical-align: middle;
+        height: 110px;
+        //width: 100px;
+      }
+      .text {
+        text-align: center;
+        display: block;
+        min-height: 70px;
+        color: $top-bgcolor;
+        max-width: 130px;
+      }
+
+    }
+  }
+  .question-list.question-list-2 {
+    .icon {
+      width: 120px;
+    }
+  }
+  .question-list.question-list-3 {
+    .icon {
+      width: 100px;
+    }
+  }
+
+  .gird-block-inner-step1 {
+    text-align: center;
+  }
+
+}
+
+.pollution-question {
+  position: relative;
+
+  .right-btn {
+    margin: 20px 0;
+  }
+
+}
+
+.pollution-slider {
+  z-index: 2;
+  width: 280px;
+  height: 53px;
+  opacity: 0;
+}
+
+.polution-slider-theme {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: -53px;
+  z-index: 1;
+
+  .polution-slider-bg {
+    position: relative;
+    width: 280px;
+    height: 53px;
+    background: url('../../../assets/img/range-slider/IH-slider-bg.svg') no-repeat left top;
+    background-size: 280px 53px;
+
+    .polution-slider-level {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      background-position: left 0px bottom 1px;
+      background-repeat: no-repeat;
+
+      &.polution-slider-low {
+        background-image: url('../../../assets/img/range-slider/IH-slider-low.svg');
+        width: 62px;
+      }
+      &.polution-slider-mid {
+        background-image: url('../../../assets/img/range-slider/IH-slider-mid.svg');
+
+      }
+      &.polution-slider-high {
+        background-image: url('../../../assets/img/range-slider/IH-slider-high.svg');
+
+      }
+      &.polution-slider-max {
+        background-image: url('../../../assets/img/range-slider/IH-slider-max.svg');
+        background-position: left 0px bottom 0px;
+      }
+    }
+  }
+}
+
+.pollution-slider[aria-valuenow="0"] {
+  & + .polution-slider-theme {
+    .polution-slider-low {
+      opacity: 1;
+    }
+  }
+}
+
+.pollution-slider[aria-valuenow="1"] {
+  & + .polution-slider-theme {
+    .polution-slider-mid {
+      opacity: 1;
+    }
+  }
+}
+
+.pollution-slider[aria-valuenow="2"] {
+  & + .polution-slider-theme {
+    .polution-slider-high {
+      opacity: 1;
+    }
+  }
+}
+
+.pollution-slider[aria-valuenow="3"] {
+  & + .polution-slider-theme {
+    .polution-slider-max {
+      opacity: 1;
+    }
+
+  }
+}
+
+.pollution-level {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+
+  .pollution-img {
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+
+    background-repeat: no-repeat;
+    background-position: center 30%;
+        -webkit-background-size:cover;
+        background-size:cover;
+
+    opacity: 0;
+    transition:opacity 0.5s linear;
+
+    &.pollution-0 {
+      background-image: url('../../../assets/img/pollution/IH-slider-mold-low.svg');
+    }
+    &.pollution-1 {
+      background-image: url('../../../assets/img/pollution/IH-slider-mold-mid.svg');
+    }
+    &.pollution-2 {
+      background-image: url('../../../assets/img/pollution/IH-slider-mold-high.svg');
+    }
+    &.pollution-3 {
+      background-image: url('../../../assets/img/pollution/IH-slider-mold-max.svg');
+    }
+
+  }
+
+}
+
+.pollution-slider[aria-valuenow="0"] {
+  & + div + .pollution-level {
+    .pollution-0 {
+      opacity: 1;
+    }
+  }
+}
+
+.pollution-slider[aria-valuenow="1"] {
+  & + div + .pollution-level {
+    .pollution-1 {
+      opacity: 1;
+    }
+  }
+}
+
+.pollution-slider[aria-valuenow="2"] {
+  & + div + .pollution-level {
+    .pollution-2 {
+      opacity: 1;
+    }
+  }
+}
+
+.pollution-slider[aria-valuenow="3"] {
+  & + div + .pollution-level {
+
+    .pollution-3 {
+      opacity: 1;
+    }
+
+  }
+}
+
+*/

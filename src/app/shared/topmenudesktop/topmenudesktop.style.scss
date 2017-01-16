@@ -1,0 +1,55 @@
+@import "../../variables.scss";
+
+.desktop-top-panel {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: $fs-lg;
+  overflow: hidden;
+  height: 60px;
+
+  .site-logo {
+    float: left;
+    line-height: 50px;
+    color: $super-light-color;
+    cursor: pointer;
+
+    img {
+      padding-left: 4px;
+      padding-right: 2px;
+      position: relative;
+      top: -2px;
+    }
+  }
+
+  .desktop-top-menu {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    //line-height: 46px;
+
+    a {
+      color: $super-light-color;
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
+
+    .menu-item {
+      //display: inline-block;
+      padding-top: 12px;
+    }
+
+    .menu-border-btn {
+        display: block;
+        border: 1px solid #fff;
+        height: 26px;
+        line-height: 1;
+        font-size: $fs-sm;
+        padding: 5px 10px;
+    }
+
+  }
+
+}

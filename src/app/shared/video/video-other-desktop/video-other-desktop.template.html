@@ -1,0 +1,151 @@
+<div class="block-video-other video-other--desktop">
+  <div class="container">
+
+    <table>
+      <thead>
+      <tr>
+        <td class="video">
+            <h3>
+              Videos zum Thema
+            </h3>
+        </td>
+        <td class="separator"></td>
+        <td class="text">
+          <h3>
+            Artikel zum Thema
+          </h3>
+        </td>
+      </tr>
+      </thead>
+
+      <tbody *ngIf="isMold">
+      <tr>
+        <td class="video">
+          <div class="video-container">
+            <youtube-video [videoId]="'ZRaglkcBwts'"></youtube-video>
+          </div>
+          <div class="texter">
+            <a href="#" class="article-title">
+              Schimmel im Bad entfernen
+            </a>
+          </div>
+        </td>
+        <td class="separator"></td>
+        <td class="text">
+
+          <tag-line-category-video></tag-line-category-video>
+
+          <div class="title">
+            Produktvergleich Schimmelentferner
+          </div>
+          <div class="texter">
+            Wenn sich schwarze Ecken in dem Badezimmer erkennbar machen, ist der Ekel oft groß. Doch oftmals muss bei Schimmelbefall nicht gleich der ...
+          </div>
+          <div class="bottom-link-block">
+            <a (click)="goArticleShimmel1();" class="tag tag--link" id="fromRecomendationsToArticle">
+              Weiterlesen
+            </a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="video">
+          <div class="video-container">
+            <youtube-video [videoId]="'S66a8dejVYQ'"></youtube-video>
+          </div>
+          <div class="texter">
+            <a href="#" class="article-title">
+              Schimmel entfernen – Schimmel im Haus
+            </a>
+          </div>
+        </td>
+        <td class="separator"></td>
+        <td class="text">
+
+          <tag-line-category-video></tag-line-category-video>
+
+          <div class="title">
+            Tipps zum Vorbeugen von Schimmelbefall
+          </div>
+          <div class="texter">
+            Unsere Tipps zum Vorbeugen von Schimmelbefall helfen dir sicher durch die feucht-kalte Jahreszeit.
+          </div>
+          <div class="bottom-link-block">
+            <a (click)="goArticleShimmel2();" class="tag tag--link" id="fromRecomendationsToChecklist">
+              Checkliste ansehen
+            </a>
+          </div>
+
+        </td>
+      </tr>
+      </tbody>
+
+      <tbody *ngIf="isFoodFloor">
+      <tr>
+        <td class="video">
+          <div class="video-container">
+            <youtube-video [videoId]="'InOFeb9SM9E'"></youtube-video>
+          </div>
+          <div class="texter">
+            <a href="#" class="article-title">
+              Vorbereitung beim Laminat verlegen
+            </a>
+          </div>
+        </td>
+        <td class="separator"></td>
+        <td class="text">
+
+          <tag-line-category-drill></tag-line-category-drill>
+
+          <div class="title">
+            So pflegst Du Deinen Laminatboden richtig
+          </div>
+          <div class="texter">
+            Mit Laminat entscheidest Du Dich für einen preisbewussten Bodenbelag mit attraktiver Optik. Um den schönen ...
+          </div>
+          <div class="bottom-link-block">
+            <a (click)="goArticleFloor1();" class="tag tag--link" id="fromRecomendationsToArticleFloor1">
+              Weiterlesen
+            </a>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="video">
+          <div class="video-container">
+            <youtube-video [videoId]="'R-BnfrTL1y8'"></youtube-video>
+          </div>
+          <div class="texter">
+            <a href="#" class="article-title">
+              Abschlussarbeiten beim Laminat verlegen
+            </a>
+          </div>
+        </td>
+        <td class="separator"></td>
+        <td class="text">
+
+          <tag-line-category-drill></tag-line-category-drill>
+
+          <div class="title">
+            Vor- und Nachteile von Laminat als Bodenbelag
+          </div>
+          <div class="texter">
+            Laminat gehört zu den beliebtesten Bodenbelägen in Deutschland, vielleicht denkst Du auch aktuell über diese ...
+          </div>
+          <div class="bottom-link-block">
+            <a (click)="goArticleFloor2();" class="tag tag--link" id="fromRecomendationsToArticleFloor2">
+              Weiterlesen
+            </a>
+          </div>
+
+        </td>
+      </tr>
+      </tbody>
+
+    </table>
+   </div>
+</div>
+
+
+
+

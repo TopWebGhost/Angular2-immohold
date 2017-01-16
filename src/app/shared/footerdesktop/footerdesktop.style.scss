@@ -1,0 +1,41 @@
+@import "../../variables.scss";
+
+.desktop-footer {
+  background-color: $footer-bg;
+
+  &.menu-line {
+    color: $doc-bgcolor;
+    overflow: auto;
+    font-family: BrandonText-Regular;
+
+    *{
+      line-height: 50px;
+      font-size: $fs-sm;
+    }
+    .left {
+      float: left;
+      text-align: left;
+    }
+    a{
+      color: $doc-bgcolor;
+      letter-spacing: 0.7px;
+    }
+    .right {
+      float: right;
+      text-align: right;
+
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li{
+        display: inline-block;
+        padding-left: 70px;
+      }
+      li:first-of-type {
+        padding-left: 0;
+      }
+    }
+  }
+
+}

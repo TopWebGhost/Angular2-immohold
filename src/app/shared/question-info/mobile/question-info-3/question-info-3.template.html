@@ -1,0 +1,45 @@
+<div class="qiestion-info qiestion-info--mobile" [ngClass]="{'expanded':showContainer  == true,'collapsed':showContainer==false}">
+    <div class="qiestion-info-inner">
+
+        <!--<div class="question-opener">-->
+            <!--<a (click)="toggleContainer()">-->
+        <div class="question-opener" (click)="toggleContainer()" >
+            <a>
+                Warum ist das wichtig?
+            </a>
+        </div>
+
+        <div class="bottomSheet" [ngClass]="{'expanded':showContainer  == true,'collapsed':showContainer==false}">
+
+            <div class="info">
+                <div class="topper">
+                    Warum ist das wichtig?
+                </div>
+                <div class="content">
+                    <div class="title">
+                        Wer sollte auf keinen Fall Schimmel selbst beseitigen?
+                    </div>
+                    <ul>
+                        <li>
+                            Schwangere Frauen
+                        </li>
+                        <li>
+                            Personen mit Immunkrankheiten
+                        </li>
+                        <li>
+                            Personen, die gerade eine Organtransplantation hinter sich haben
+                        </li>
+                    </ul>
+
+                </div>
+
+                <button md-icon-button class="side-nav-close-button hide-btn" (click)="toggleContainer()">
+                    <md-icon svgSrc="/assets/icon/IH-nav-close-color.svg"></md-icon>
+                </button>
+                <div class="footer" (click)="toggleContainer()">
+                    Alles klar
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

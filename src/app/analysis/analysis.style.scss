@@ -1,0 +1,118 @@
+@import "../variables.scss";
+
+.block-analasiere {
+  height:100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;  
+
+  h3 {
+    color: $colorH2;
+    padding-bottom: 20px;
+
+    @media (min-width: $screen-md) {
+      font-size: $fs-h1-dt;
+    }
+  }
+  .imager {
+    position: relative;
+    text-align: center;
+    width: 174px;
+    height: 174px;
+
+    @media (min-width: $screen-md) and (min-height: 900px) {
+      width: 348px;
+      height: 348px;
+    }
+
+    img {
+      position: relative;
+      z-index: 2;
+      margin-top: -54px;
+      width: 200px;
+      height: 200px;
+
+      @media (min-width: $screen-md) and (min-height: 900px) {
+        width: 334px;
+        height: 334px;
+        margin-top: -28px;
+      }
+
+    }
+
+  }
+  .imager:before {
+    content: " ";
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+
+    width: 174px;
+    height: 174px;
+    background-color: #fbfbff;
+//    box-shadow: -2px 2px 1px 0 rgba(250, 160, 0, 0.9);
+    box-shadow: -2px 2px 1px 0 #ffe21f;
+    z-index: 1;
+    border-radius: 50%;
+
+    @media (min-width: $screen-md) and (min-height: 900px) {
+      width: 348px;
+      height: 348px;
+    }
+
+  }
+  .imager:before{
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 1200ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 1200ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1200ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+    animation-name: spin;
+    animation-duration: 1200ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+  }
+  @-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @keyframes spin {
+    from {
+      transform:rotate(0deg);
+    }
+    to {
+      transform:rotate(360deg);
+    }
+  }
+
+  p {
+    color: $colorH2;
+    font-size:$fs-analasiere;
+    padding-top: 20px;
+
+    @media (min-width: $screen-md) {
+      font-size: $fs-analasiere-dt;
+    }
+  }
+
+}
+

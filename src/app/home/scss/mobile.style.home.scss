@@ -1,0 +1,52 @@
+@import "./home.style.scss";
+
+.side-nav-back-btn {
+  visibility: hidden;
+}
+
+.mobile-content-start-page {
+  text-align: center;
+
+  .image-block {
+    /*display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;*/
+
+/*    .mold {
+      padding-top: 18px;
+    }*/
+
+    .hero {
+
+    }
+
+  }
+
+  h1 {
+    margin: 0 0 15px 0;
+  }
+
+  .right-btn {
+    margin-bottom: 15px;
+  }
+
+  .description {
+    margin: 0 0 10px 0;
+  }
+
+  .start-btn {
+    width: 210px;
+    height: 55px;
+    font-size: $fs-btn-large;
+    margin: 5px 0 25px 0;
+  }
+
+}
+
+/*.mobile-footer {
+  background-color: $doc-bgcolor;
+}*/
+

@@ -1,0 +1,10 @@
+<div class="card-container" [@routeAnimation] = "direction" (window:resize)="onResize($event)">
+
+  <h1>Prymary Content Pest</h1>
+  <h1>Remake all components if needed</h1>
+
+  <primary-content-pest-desktop *ngIf="!isMobile"></primary-content-pest-desktop>
+
+  <primary-content-pest-mobile *ngIf="isMobile"></primary-content-pest-mobile>
+
+</div>

@@ -1,0 +1,51 @@
+@import "../../variables.scss";
+
+.block-list-of-articles {
+  background-color: $bg-list-of-articles;
+
+  @media (min-width: $screen-md) {
+    border: 3px solid $color-white;
+  }
+
+
+  .container {
+    padding: 15px 20px;
+
+    @media (min-width: $screen-md) {
+      padding: 15px 30px;
+    }
+  }
+
+  .block-title {
+    font-size: $fs-base;
+    color: $colorH2;
+    font-family: $ffb;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    padding-top: 17px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid rgba(0, 150, 219, 0.2);
+
+    &:last-of-type {
+      border-bottom: none;
+
+      @media (min-width: $screen-md) {
+        padding-bottom: 7px;
+      }
+
+    }
+  }
+  .article-title {
+    font-size: $fs-base-dt;
+    color: $colorH3;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+
+}

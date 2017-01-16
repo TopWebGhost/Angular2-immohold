@@ -1,0 +1,112 @@
+
+<!-- Mold page -->
+
+<div class="block-question">
+
+  <div class="container flex flex--main">
+
+    <div class="flex">
+      <div class="text-top">
+        Wie steht es um
+        <br>deine Gesundheit?
+      </div>
+
+    </div>
+
+    <div class="flex flex--big gird-block">
+
+      <div class="gird-block-inner">
+
+        <div cols="2" class="question-list question-list-3 question-list-2-col">
+          <div class="item"  *ngFor="let element of healthes"  [ngClass]="{'active-item': element.title == health}" (click) = "trackBy(element.title)" id="fromHealthQuestionToAnalysis-{{element.id}}">
+               <a  class="inner">
+              <span class="icon">
+                <span class="icon-hover">
+                  <img src="../../assets/icon/{{element.icon}}.svg" width="{{element.width}}">
+                </span>
+              </span>
+              <span class="text">
+                <span class="text-title">
+                  {{element.title}}
+                </span>
+                <span class="text-content">
+                  {{element.secondTitle}}
+                </span>
+              </span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="flex">
+      <div class="text-bottom">
+        Wenn du z.B. schwanger bist, eine<br>
+        Immunschwächekrankheit hast, oder<br>
+        eine Organtransplantation hattest ist<br>
+        der Kontakt mit Schimmel gefährlich.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<question-info-3-mobile></question-info-3-mobile>
+
+
+<!-- Food Floor -->
+
+<!--div class="block-question question3-food-floor">
+
+  <div class="container flex flex--main">
+
+    <div class="flex">
+      <div class="text-top">
+        Welche Qualität soll<br>
+        das Laminat haben?
+      </div>
+
+    </div>
+
+    <div class="flex flex--big gird-block">
+
+      <div class="gird-block-inner">
+
+        <div cols="2" class="question-list question-list-3 question-list-2-col">
+          <div class="item"  *ngFor="let element of healthes"  [ngClass]="{'active-item': element.title == health}" (click) = "trackBy(element.title)" id="fromHealthQuestionToAnalysis-{{element.id}}">
+               <a  class="inner">
+              <span class="icon">
+                <span class="icon-hover">
+                  <img src="../../assets/icon/{{element.icon}}.svg" width="{{element.width}}">
+                </span>
+              </span>
+              <span class="text">
+                <span class="text-title">
+                  {{element.title}}
+                </span>
+                <span class="text-content">
+                  {{element.secondTitle}}
+                </span>
+              </span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="flex">
+      <div class="text-bottom">
+        Die Qualität des Laminats hat einen<br>
+        wesentlichen Einfluss auf die Langlebigkeit<br>
+        des Bodens sowie die Materialanmutung.
+      </div>
+    </div>
+
+  </div>
+</div>
+<question-info-3-mobile-food-floor></question-info-3-mobile-food-floor-->
+

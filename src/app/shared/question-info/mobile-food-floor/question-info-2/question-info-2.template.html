@@ -1,0 +1,40 @@
+<div class="qiestion-info qiestion-info--mobile" [ngClass]="{'expanded':showContainer  == true,'collapsed':showContainer==false}">
+     <div class="qiestion-info-inner">
+
+    <!--<div class="question-opener">-->
+    <!--<a (click)="toggleContainer()">-->
+    <div class="question-opener" (click)="toggleContainer()" >
+      <a>
+        Warum ist das wichtig?
+      </a>
+    </div>
+
+    <div class="bottomSheet" [ngClass]="{'expanded':showContainer  == true,'collapsed':showContainer==false}">
+
+         <div class="info">
+        <div class="topper">
+          Warum ist das wichtig?
+        </div>
+        <div class="content">
+          <ul>
+            <li>
+              <p>Bei Laminat gibt es verschiedene Nutzungsklassen (NK). Diese werden auch Beanspruchungsklassen
+                genannt und weisen die Strapazierfähigkeit des Materials aus.
+              </p>
+              <p>Je höher also die NK ist, desto widerstandsfähiger das Material. Im privaten Bereich gibt es die
+                Nutzungsklassen 21-23, im gewerblichen Bereich greift man auf 31-33 zurück.
+              </p>
+            </li>
+          </ul>
+
+        </div>
+        <button md-icon-button class="side-nav-close-button hide-btn" (click)="toggleContainer()">
+          <md-icon svgSrc="/assets/icon/IH-nav-close-color.svg"></md-icon>
+        </button>
+        <div class="footer" (click)="toggleContainer()">
+          Alles klar
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

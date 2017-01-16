@@ -1,0 +1,9 @@
+<div class="card-container" [@routeAnimation] = "direction" (window:resize)="onResize($event)">
+
+  <h1>Prymary Content Floor</h1>
+
+  <primary-content-floor-desktop *ngIf="!isMobile"></primary-content-floor-desktop>
+
+  <primary-content-floor-mobile *ngIf="isMobile"></primary-content-floor-mobile>
+
+</div>
